@@ -1,8 +1,8 @@
-const sobre = () => {
+const Sobre = () => {
     return (
         <>
         </>
     )
 }
 
-export default sobre;
+export default Sobre;

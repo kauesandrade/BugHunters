@@ -1,9 +1,9 @@
 
-const conteudos = () => {
+const Conteudos = () => {
     return (
         <>
         </>
     )
 }
 
-export default conteudos;
+export default Conteudos;

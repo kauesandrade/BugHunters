@@ -1,8 +1,8 @@
-const atividades = () => {
+const Atividades = () => {
     return (
         <>
         </>
     )
 }
 
-export default atividades;
+export default Atividades;
