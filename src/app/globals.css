@@ -4,7 +4,14 @@
   --orange: #FF8340;
   --white: #FAF1EC;
   --black: #1F1E21;
-  --fonte-poppins: 'Poppins', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+@theme {
+  --color-orange: var(--orange);
+  --color-white: var(--white);
+  --color-black: var(--black);
+  --font-poppins: var(--font-poppins);
 }
 
 @theme inline {
