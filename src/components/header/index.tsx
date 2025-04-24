@@ -19,16 +19,16 @@ const Header = () => {
             <section className="flex items-center font-extralight">
                 <ul className="flex gap-24">
                     <li>
-                        <a className="cursor-pointer" onClick={() => handleNavigation("/conteudos")}>Conteúdos</a>
+                        <a className="hover:underline underline-offset-8 decoration-orange cursor-pointer" onClick={() => handleNavigation("/conteudos")}>Conteúdos</a>
                     </li>
                     <li>
-                        <a className="cursor-pointer" onClick={() => handleNavigation("/atividades")}>Atividades</a>
+                        <a className="hover:underline underline-offset-8 decoration-orange cursor-pointer" onClick={() => handleNavigation("/atividades")}>Atividades</a>
                     </li>
                     <li>
-                        <a className="cursor-pointer" onClick={() => handleNavigation("/sobre")}>Sobre</a>
+                        <a className="hover:underline underline-offset-8 decoration-orange cursor-pointer" onClick={() => handleNavigation("/sobre")}>Sobre</a>
                     </li>
                     <li>
-                        <a className="cursor-pointer" onClick={() => handleNavigation("/contato")}>Contato</a>
+                        <a className="hover:underline underline-offset-8 decoration-orange cursor-pointer" onClick={() => handleNavigation("/contato")}>Contato</a>
                     </li>
                 </ul>
             </section>
