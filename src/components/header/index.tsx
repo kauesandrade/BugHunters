@@ -12,7 +12,7 @@ const Header = () => {
     }
 
     return (
-        <header className="grid grid-flow-col px-18 py-8 shadow-md shadow-orange">
+        <header className="grid grid-flow-col px-18 py-8 shadow-md shadow-orange fixed w-screen z-50 bg-background">
             <section className="flex items-center">
                 <img className="cursor-pointer" onClick={() => handleNavigation("/")} src="/logo.svg" alt="Logo Bug Hunters"/>
             </section>
