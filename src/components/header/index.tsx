@@ -11,8 +11,29 @@ const Header = () => {
         router.push(path);
     }
 
+    const [lastScroll, setLastScroll] = React.useState(0);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+          const header = document.getElementById('header') as HTMLDivElement;
+    
+          header.classList.add('transition-all', 'duration-300', 'ease-in-out');
+
+          if (window.scrollY > lastScroll && window.scrollY > 200) {
+            header.classList.add('opacity-0', 'invisible');
+          } else {
+            header.classList.remove('opacity-0', 'invisible');
+          }
+    
+          setLastScroll(window.scrollY);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, [lastScroll]);
+
     return (
-        <header className="grid grid-flow-col px-18 py-8 shadow-md shadow-orange fixed w-screen z-50 bg-background">
+        <header id="header" className="grid grid-flow-col px-18 py-8 shadow-md shadow-orange fixed w-screen z-50 bg-background">
             <section className="flex items-center">
                 <img className="cursor-pointer" onClick={() => handleNavigation("/")} src="/logo.svg" alt="Logo Bug Hunters"/>
             </section>
