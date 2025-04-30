@@ -1,6 +1,6 @@
 'use client';
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Header = () => {
@@ -11,33 +11,39 @@ const Header = () => {
         router.push(path);
     }
 
-    const [lastScroll, setLastScroll] = React.useState(0);
+    const [lastScroll, setLastScroll] = useState(0);
 
-    React.useEffect(() => {
+
+
+    useEffect(() => {
         const handleScroll = () => {
-          const header = document.getElementById('header') as HTMLDivElement;
-    
-          header.classList.add('transition-all', 'duration-300', 'ease-in-out');
+            const header = document.getElementById('header') as HTMLDivElement;
 
-          if (window.scrollY > lastScroll && window.scrollY > 200) {
-            header.classList.add('opacity-0', 'invisible');
-          } else {
-            header.classList.remove('opacity-0', 'invisible');
-          }
-    
-          setLastScroll(window.scrollY);
+            // if (window.scrollY > lastScroll && window.scrollY > 200) {
+            //   header.classList.add('invisible');
+            // } else {
+            //   header.classList.remove('invisible');
+            // }
+
+            if (window.scrollY == 0) {
+                header.classList.remove('shadow-md', 'shadow-orange');
+            } else {
+                header.classList.add('shadow-md', 'shadow-orange');
+            }
+
+            setLastScroll(window.scrollY);
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-      }, [lastScroll]);
+    }, [lastScroll]);
 
     return (
         <header id="header" className="grid grid-flow-col px-18 py-8 shadow-md shadow-orange fixed w-screen z-50 bg-background">
             <section className="flex items-center">
-                <img className="cursor-pointer" onClick={() => handleNavigation("/")} src="/logo.svg" alt="Logo Bug Hunters"/>
+                <img className="cursor-pointer" onClick={() => handleNavigation("/")} src="/logo.svg" alt="Logo Bug Hunters" />
             </section>
-            <section className="flex items-center font-extralight">
+            <section className="hidden lg:flex items-center font-extralight">
                 <ul className="flex gap-24">
                     <li>
                         <a className="cursor-pointer" onClick={() => handleNavigation("/conteudos")}>Conteúdos</a>
@@ -50,6 +56,13 @@ const Header = () => {
                     </li>
                     <li>
                         <a className="cursor-pointer" onClick={() => handleNavigation("/contato")}>Contato</a>
+                    </li>
+                </ul>
+            </section>
+            <section className="flex lg:hidden items-center font-extralight">
+                <ul className="flex gap-24">
+                    <li>
+                        <a className="cursor-pointer" onClick={() => handleNavigation("/conteudos")}>Conteúdos</a>
                     </li>
                 </ul>
             </section>
