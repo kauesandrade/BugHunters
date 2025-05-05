@@ -26,9 +26,9 @@ const Header = () => {
             // }
 
             if (window.scrollY == 0) {
-                header.classList.remove('shadow-md', 'shadow-orange', 'opacity-25');
+                header.classList.remove('shadow-md', 'shadow-orange', 'bg-background/80', 'backdrop-blur-sm' );
             } else {
-                header.classList.add('shadow-md', 'shadow-orange', 'opacity-25');
+                header.classList.add('shadow-md', 'shadow-orange', 'bg-background/80', 'backdrop-blur-sm' );
             }
 
             setLastScroll(window.scrollY);
@@ -44,7 +44,7 @@ const Header = () => {
                 <img className="cursor-pointer" onClick={() => handleNavigation("/")} src="/logo.svg" alt="Logo Bug Hunters" />
             </section>
             <section className="hidden lg:flex items-center font-extralight">
-                <ul className="flex gap-24">
+                <ul className="flex font-medium gap-24">
                     <li>
                         <a className="cursor-pointer" onClick={() => handleNavigation("/conteudos")}>Conteúdos</a>
                     </li>

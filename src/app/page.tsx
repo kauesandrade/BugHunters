@@ -29,7 +29,79 @@ export default function Home() {
           titulo: "Lógica de programação",
           texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
           id: "3"
-        }
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "1"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "2"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "3"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "1"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "2"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "3"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "1"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "2"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "3"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "1"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "2"
+        },
+        {
+          icon: <Lightbulb className="text-orange" size={"48px"} />,
+          titulo: "Lógica de programação",
+          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          id: "3"
+        },
       ]}
     />
     </>
