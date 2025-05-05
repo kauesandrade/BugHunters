@@ -3,13 +3,14 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-import { icons, Lightbulb } from 'lucide-react';
-
 type cardModuloType = {
     icon?: Element | any
     titulo: string
     texto: string
+    id: string
 }
+
+export type { cardModuloType };
 
 //exemplo import: <CardModulo icon={<Lightbulb className="text-orange" size={"48px"}/>} titulo="Lógica de programação" texto="texto texto texto texto texto texto texto texto texto texto texto texto" />
 

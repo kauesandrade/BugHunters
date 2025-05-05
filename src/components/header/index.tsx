@@ -26,9 +26,9 @@ const Header = () => {
             // }
 
             if (window.scrollY == 0) {
-                header.classList.remove('shadow-md', 'shadow-orange');
+                header.classList.remove('shadow-md', 'shadow-orange', 'opacity-25');
             } else {
-                header.classList.add('shadow-md', 'shadow-orange');
+                header.classList.add('shadow-md', 'shadow-orange', 'opacity-25');
             }
 
             setLastScroll(window.scrollY);
