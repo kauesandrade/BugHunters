@@ -2,11 +2,13 @@ import Cover from '@/components/home/cover';
 import Banner from '@/components/home/banner';
 import { Lightbulb, Section } from 'lucide-react';
 import SectionModulos from '@/components/section-modulos';
+import Modulo2 from './conteudos/modulo2.tsx/page';
 
 export default function Home() {
   return (
     <>
     <Cover />
+    <Modulo2 />
     <Banner />
     <SectionModulos 
       title="Módulos" 
