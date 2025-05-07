@@ -2,13 +2,11 @@ import Cover from '@/components/home/cover';
 import Banner from '@/components/home/banner';
 import { Lightbulb, Section } from 'lucide-react';
 import SectionModulos from '@/components/section-modulos';
-import Modulo1 from './conteudos/Modulo1/page';
 
 export default function Home() {
   return (
     <>
     <Cover />
-    <Modulo1 />
     <Banner />
     <SectionModulos 
       title="Módulos" 
@@ -17,7 +15,7 @@ export default function Home() {
         {
           icon: <Lightbulb className="text-orange" size={"48px"} />,
           titulo: "Lógica de programação",
-          texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
+          texto: "Os primeiros passos para entrar no mundo da programação!",
           id: "1"
         },
         {
