@@ -44,7 +44,7 @@ const Modulo4 = () => {
 
                 <div className="flex flex-col gap-10">
                     <h4 className="text-2xl font-medium underline underline-offset-4 decoration-orange">Ordem de precedência</h4>
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4">3
                         <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange">1</span>  Parênteses</p>
                         <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange">2</span>  Multiplicação, divisão, módulo</p>
                         <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange">3</span>  Soma, adição</p>
