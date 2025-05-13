@@ -4,6 +4,10 @@ import { Boxes, Brain, Cable, Code, Equal, Lightbulb, RotateCcw, Section, Split 
 import SectionModulos from '@/components/section-modulos';
 
 export default function Home() {
+  function handleNavigation(arg0: string): void {
+    throw new Error('Function not implemented.');
+  }
+
   return (
     <>
     <Cover />
