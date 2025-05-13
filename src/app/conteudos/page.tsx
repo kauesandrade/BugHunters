@@ -1,5 +1,5 @@
 import SectionModulos from "@/components/section-modulos";
-import { Lightbulb } from "lucide-react";
+import { Boxes, Brain, Cable, Code, Equal, Lightbulb, RotateCcw, Split } from "lucide-react";
 
 const Conteudos = () => {
     return (
@@ -9,96 +9,48 @@ const Conteudos = () => {
                 description="Aprenda os conceitos básicos da linguagem C, desde a sintaxe até a programação orientada a objetos."
                 modulos={[
                     {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "Os primeiros passos para entrar no mundo da programação!",
-                        id: "1"
+                      icon: <Brain className="text-orange" size={"48px"} />,
+                      titulo: "M1 - Lógica de programação",
+                      texto: "A lógica de programação é o conjunto de regras e técnicas utilizadas pelos programadores para o desenvolvimento de sistemas, e a habilidade de pensar de forma lógica e estruturada, decompondo um sistema complexo em etapas mais simples. ",
+                      link: "/modulo1"
                     },
                     {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "2"
+                      icon: <Code className="text-orange" size={"48px"} />,
+                      titulo: "M2 - Introdução à Programação em C",
+                      texto: "Durante o curso dos estudos e atividades, nós utilizaremos da linguagem C. A seguir se encontra uma breve introdução aos principais tópicos que se deve atentar ao iniciarmos a programar nela!",
+                      link: "/modulo2"
                     },
                     {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "3"
+                      icon: <Boxes className="text-orange" size={"48px"} />,
+                      titulo: "M3 - Tipos de Dados e Variáveis o Tipos primitivos",
+                      texto: 'Em "Tipos de Dados e Variáveis" ou "Tipos Primitivos em C", aprende-se a declarar, utilizar e entender os principais tipos de dados básicos da linguagem, como int, float, char e double, além de como armazenar e manipular valores na memória por meio de variáveis!',
+                      link: "/modulo3"
                     },
                     {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "1"
+                      icon: <Equal className="text-orange" size={"48px"} />,
+                      titulo: "M4 - Operadores relacionais",
+                      texto: "Os operadores relacionais em C são usados para comparar valores e retornam resultados booleanos, permitindo a tomada de decisões, como ==, !=, >, <, >=, e <=.",
+                      link: "/modulo4"
                     },
                     {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "2"
+                      icon: <Split className="text-orange" size={"48px"} />,
+                      titulo: "M5 - Estruturas Condicionais",
+                      texto: "Uma estrutura condicional é baseada em uma condição que, caso seja atendida, o algoritmo irá tomar uma decisão determinada.",
+                      link: "/modulo5"
                     },
                     {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "3"
+                      icon: <RotateCcw className="text-orange" size={"48px"} />,
+                      titulo: "M6 - Estruturas de Repetição",
+                      texto: "As estruturas de repetição em C são usadas para executar um bloco de código várias vezes, como o for, while e do-while, que repetem o código enquanto uma condição for verdadeira.",
+                      link: "/modulo6"
                     },
                     {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "1"
+                      icon: <Cable className="text-orange" size={"48px"} />,
+                      titulo: "M7 - Entrada e Saída de Dados",
+                      texto: "Entrada e saída de dados em C referem-se à forma como o programa interage com o usuário ou com o sistema, utilizando funções como scanf() para entrada de dados e printf() para exibição de resultados.",
+                      link: "/modulo7"
                     },
-                    {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "2"
-                    },
-                    {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "3"
-                    },
-                    {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "1"
-                    },
-                    {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "2"
-                    },
-                    {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "3"
-                    },
-                    {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "1"
-                    },
-                    {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "2"
-                    },
-                    {
-                        icon: <Lightbulb className="text-orange" size={"48px"} />,
-                        titulo: "Lógica de programação",
-                        texto: "texto texto texto texto texto texto texto texto texto texto texto texto",
-                        id: "3"
-                    },
-                ]}
+                  ]}
             />
         </>
     )
