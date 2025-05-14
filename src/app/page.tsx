@@ -1,14 +1,10 @@
 import Cover from '@/components/home/cover';
 import Banner from '@/components/home/banner';
-import { Lightbulb, Section, ChevronUp, GraduationCap, Boxes, Brain, Cable, Code, Equal, RotateCcw, Split } from 'lucide-react';
+import { ChevronUp, GraduationCap, Boxes, Brain, Cable, Code, Equal, RotateCcw, Split } from 'lucide-react';
 import SectionModulos from '@/components/section-modulos';
 import Link from 'next/link';
 
 export default function Home() {
-  function handleNavigation(arg0: string): void {
-    throw new Error('Function not implemented.');
-  }
-
   return (
     <>
     <Cover />
