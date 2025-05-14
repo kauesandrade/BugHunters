@@ -18,7 +18,7 @@ const SectionModulos = ({title, description, modulos}:sectionModulesType) => {
             </div>
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-10 w-full'>
                 {modulos.map((modulo, index) => (
-                    <CardModulo key={index} icon={modulo.icon} titulo={modulo.titulo} texto={modulo.texto} id={modulo.id} />
+                    <CardModulo key={index} icon={modulo.icon} titulo={modulo.titulo} texto={modulo.texto} link={modulo.link} />
                 ))}
             </div>
         </section>
