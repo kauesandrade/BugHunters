@@ -15,7 +15,7 @@ const page = () => {
                     <li className="mt-2">Int: Representa números inteiros (positivos ou negativos). Exemplos: -10, 5;</li>
                     <li className="mt-2">Float: Representa números reais com ponto decimal, como 3,14 ou –0.6.</li>
                     <li className="mt-2">Char: Armazena um caractere como: ‘A’;</li>
-                    <li className="mt-2">Double: Representa números reais, similar ao float, mas com maior precisão (mais casas decimais)</li>
+                    <li className="mt-2 mb-14">Double: Representa números reais, similar ao float, mas com maior precisão (mais casas decimais)</li>
                 </ul>
                 <CodeBlock code=
                     {`#include <stdio.h>
@@ -38,7 +38,7 @@ int main()
                 <p className="mt-6">As constantes são valores fixos que não mudam durante a execução do programa. São utilizadas para garantir que determinado valor permaneça imutável.</p>
                 <ul className={"list-disc list-inside pl-8 indent-[-24px]"}>
                     <li className="mt-2">#define: Um pré-processador utilizado para definir constantes;</li>
-                    <li className="mt-2">Const: Uma palavra chave usada para declarar constantes.</li>
+                    <li className="mt-2 mb-14">Const: Uma palavra chave usada para declarar constantes.</li>
                 </ul>
                 <CodeBlock code=
                     {`#include <stdio.h>
@@ -58,7 +58,7 @@ int main()
                     <li className="mt-2">Os nomes devem começar com uma letra ou sublinhado;</li>
                     <li className="mt-2">Não podem conter espaços ou caracteres especiais (exceto _);</li>
                     <li className="mt-2">Use nomes descritivos para facilitar a compreensão (ex.: idadeAluno);</li>
-                    <li className="mt-2">É sensível a maiúsculas e minúsculas (ex.: Valor é diferente de valor).</li>
+                    <li className="mt-2 mb-14">É sensível a maiúsculas e minúsculas (ex.: Valor é diferente de valor).</li>
                 </ul>
 
                 <CodeBlock code=

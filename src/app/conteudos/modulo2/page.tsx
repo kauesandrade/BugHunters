@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/CodeBlock";
+import SolutionBlock from "@/components/SolutionBlock";
 import Image from "next/image";
 
 const page = () => {
@@ -19,7 +20,7 @@ const page = () => {
               Estrutura básica de um programa em C
               </h3>
             <p className="mt-6">Para iniciar a programar, precisamos antes de tudo de um arquivo de extensão “.c”. Feita essa etapa, podemos começar a editá-lo no seu aplicativo de preferência.</p>
-            <p className="mt-4">A primeira linha está importando a biblioteca stdio (entra e saída padrão) com a palavra-chave #include. Nela, encontra-se as principais funções para entrada e saída de dados.</p>
+            <p className="mt-4 mb-14">A primeira linha está importando a biblioteca stdio (entra e saída padrão) com a palavra-chave #include. Nela, encontra-se as principais funções para entrada e saída de dados.</p>
             <CodeBlock code=
 {`#include <stdio.h>
 int main()
@@ -28,7 +29,6 @@ int main()
     return 0;
 }`} 
 />
-
             <p className="mt-14">A primeira linha está importando a biblioteca stdio (entra e saída padrão) com a palavra-chave #include. Nela, encontra-se as principais funções para entrada e saída de dados.</p>
             <p className="mt-4">A segunda linha define a função main. Entre parênteses, encontra-se a palavra-chave void. Ela representa o que será recebido como entrada (dados) quando o programa é chamado; nesse caso, nada. O int (número inteiro) representa que tipo de dado será retornado pela função. Isso condiz com a linha 4: return 0;.</p>
             <p className="mt-4">Quando a função principal retorna 0, significa que rodou como esperado. Qualquer outro número representa uma exceção durante a execução. O significado de cada número dependerá do programador.</p>
@@ -48,7 +48,7 @@ int main()
             <p className="mt-14">Essas são as maneiras mais simples para atingir o mesmo objetivo. Mas caso queira algo mais amigável, você pode tentar fazer C ser executado pela IDE Visual Studio Code. Felizmente, eles disponibilizam um tutorial: C/C++ for Visual Studio Code. Tente-se aventurar, mas sempre com segurança!</p>
         </section>
         <section>
-          <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
+          <h3 className="mt-14 mb-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
             Sintaxe básica
           </h3>
           <CodeBlock code=

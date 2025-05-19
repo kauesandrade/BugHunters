@@ -5,7 +5,7 @@ import c from 'highlight.js/lib/languages/c'
 import { useEffect, useRef } from 'react';
 hljs.registerLanguage('c', c)
 
-type CodeBlockProps = {
+export type CodeBlockProps = {
     code: string;
 }
 
@@ -19,7 +19,7 @@ const CodeBlock = ({code}: CodeBlockProps) => {
         hljs.highlightElement(codeRef.current);
     }, [])
     return (
-        <pre className="mt-14 px-14 py-10 rounded-3xl bg-[#27242C]">
+        <pre className="px-14 py-10 rounded-3xl bg-[#27242C]">
             <code className={"!bg-[inherit] hljs language-c"} ref={codeRef} 
             // dangerouslySetInnerHTML={{__html: highlightedCode}}
             >

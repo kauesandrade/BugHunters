@@ -7,13 +7,13 @@ const page = () => {
   return (
     <main className="pt-49 pb-20 px-45 font-normal text-base text-justify">
         <h2 className="font-semibold text-[2.5rem]">Estruturas Condicionais</h2>
-        <p className="mt-6">Uma estrutura condicional é baseada em uma condição que, caso seja atendida, o algoritmo irá tomar uma decisão determinada. Uma forma simples de representar uma estrutura de condição através de pseudocódigo está representada abaixo: </p>
+        <p className="mt-6 mb-14">Uma estrutura condicional é baseada em uma condição que, caso seja atendida, o algoritmo irá tomar uma decisão determinada. Uma forma simples de representar uma estrutura de condição através de pseudocódigo está representada abaixo: </p>
         <CodeBlock code=
 {`SE (a > b) ENTÃO 
 	Exibir mensagem "o número A é maior que o número B". 
 FIM SE `} 
 />
-        <p className="mt-6">Esses fundamentos da estrutura condicional estão presentes em todas as linguagens, com apenas algumas diferenças na sua sintaxe. Para a linguagem C, essa estrutura é definida pelo padrão “if () {}”, da forma que está representada abaixo: </p>
+        <p className="mt-6 mb-14">Esses fundamentos da estrutura condicional estão presentes em todas as linguagens, com apenas algumas diferenças na sua sintaxe. Para a linguagem C, essa estrutura é definida pelo padrão “if () {}”, da forma que está representada abaixo: </p>
         <CodeBlock code=
 {`if (a > b) { 
     printf("o número %d é maior que o número %d", a, b); 
@@ -28,14 +28,14 @@ FIM SE `}
             <h3 className="mt-24 font-medium text-2xl underline underline-offset-4 decoration-orange">
               Estrutura Condicional Composta
               </h3>
-            <p className="mt-6">Para a estrutura condicional composta, ela se baseia numa extensão da simples, em que, caso a condição determinada seja falsa, outro código será executado: </p>
+            <p className="mt-6 mb-14">Para a estrutura condicional composta, ela se baseia numa extensão da simples, em que, caso a condição determinada seja falsa, outro código será executado: </p>
             <CodeBlock code=
 {`SE (a > b) ENTÃO 
 	Exibir mensagem "o número A é maior que o número B". 
 SENÃO 
 	Exibir mensagem "o número A é menor que o número B".`} 
 />
-            <p className="mt-6">Para a linguagem C, é utilizado o termo “else” logo após a execução do “if” para determinar o que será executado caso a condição não seja atingida: </p>
+            <p className="mt-6 mb-14">Para a linguagem C, é utilizado o termo “else” logo após a execução do “if” para determinar o que será executado caso a condição não seja atingida: </p>
             <CodeBlock code=
 {`if (a > b) { 
     printf("o número %d é maior que o número %d", a, b); 
@@ -53,7 +53,7 @@ SENÃO
             <h3 className="mt-24 font-medium text-2xl underline underline-offset-4 decoration-orange">
               Estrutura de Decisão Múltipla
               </h3>
-            <p className="mt-6">A estrutura Switch-Case, ou de Decisão Múltipla é uma estrutura usada e muito adequada para quando uma variável ou valor recebido pode receber vários valores previamente definidos (por exemplo, um menu de seleção). Possui como base a seguinte sintaxe: </p>
+            <p className="mt-6 mb-14">A estrutura Switch-Case, ou de Decisão Múltipla é uma estrutura usada e muito adequada para quando uma variável ou valor recebido pode receber vários valores previamente definidos (por exemplo, um menu de seleção). Possui como base a seguinte sintaxe: </p>
             <CodeBlock code=
 {`switch (variável) 
 { 
@@ -69,7 +69,7 @@ SENÃO
      Instruções; 
 } `} 
 />
-            <p className="mt-10">Seguindo esse exemplo, a variável definida no início da estrutura será comparada em cada bloco “case”. Passando por cada bloco, caso essa variável definida atenda uma das condições em um desses blocos, as linhas de código dentro desse “case” serão executadas.</p>
+            <p className="mt-10 mb-14">Seguindo esse exemplo, a variável definida no início da estrutura será comparada em cada bloco “case”. Passando por cada bloco, caso essa variável definida atenda uma das condições em um desses blocos, as linhas de código dentro desse “case” serão executadas.</p>
             <CodeBlock code=
 {`printf ("Digite um valor de 1 a 3: "); 
 scanf("%d", &valor); 
@@ -100,7 +100,7 @@ switch (valor)
                 Exemplos
             </h3>
             <p className="mt-8">A seguir são mostrados dois exemplos de exercícios com suas resoluções, utilizando a estrutura condicional: </p>
-            <ul className={"list-disc list-inside pl-8 indent-[-24px]"}>
+            <ul className={"list-disc list-inside pl-8 indent-[-24px] mb-14"}>
                 <li className="mt-6">Um algoritmo para o cálculo de média de notas de um aluno. Esse algoritmo precisa buscar 3 notas de um aluno e calcular o conceito final entre A, B e C. Após o conceito, o sistema mostra se o aluno está reprovado caso o conceito seja C, ou aprovado caso contrário. (A = Maior que 8, B = Entre 6 e 8, C = Menor que 6). </li>
             </ul>
             <CodeBlock code=
@@ -150,7 +150,7 @@ switch (valor)
     return 0; 
 } `} 
           />
-            <ul className={"list-disc list-inside pl-8 indent-[-24px]"}>
+            <ul className={"list-disc list-inside pl-8 indent-[-24px] mb-14"}>
                 <li className="mt-12">Um algoritmo que pede um número de 1 até 7 e retorna um dia da semana correspondente a esse número: </li>
             </ul>
             <CodeBlock code=
