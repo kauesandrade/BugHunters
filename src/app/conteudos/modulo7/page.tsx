@@ -30,9 +30,19 @@ const page = () => {
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Exemplo
         </h3>
-        <p className="mt-6">
-          scanf(“%f”, &total);
-        </p>
+        <CodeBlock code={`
+        #include <stdio.h> 
+
+          int main(void) { 
+            float total;
+            printf ("Digite o valor total: ");
+            // Lê o valor total digitado pelo usuário e armazena na variável total
+            scanf(“%f”, &total);
+
+            return 0; 
+          }`
+        }
+        />
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Explicação
         </h3>
@@ -75,9 +85,17 @@ const page = () => {
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Exemplo
         </h3>
-        <p className="mt-6">
-          printf(“Total a pagar: R$ %f”, total);
-        </p>
+        <CodeBlock code={`
+        #include <stdio.h> 
+
+          int main(void) { 
+            float total;
+            printf ("Digite o valor total: ");
+            scanf(“%f”, &total);
+            // Exibe o valor total na tela
+            printf(“Total a pagar: R$ %f”, total);
+        `}
+        />
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Explicação
         </h3>
@@ -94,48 +112,48 @@ const page = () => {
           1. Faça um programa que solicite dois números ao usuário, calcule a soma desses números e imprima o resultado na tela.
         </p>
         <CodeBlock code={`
-          #include <stdio.h> 
+        #include <stdio.h> 
 
-            int main(void) { 
-              int iQtdSegundos, iHoras, iMinutos, iSegundos;
+          int main(void) { 
+            int iQtdSegundos, iHoras, iMinutos, iSegundos;
 
-              printf ("Entre com o valor em segundos: ");
-              scanf("%d",&iQtdSegundos);
+            printf ("Entre com o valor em segundos: ");
+            scanf("%d",&iQtdSegundos);
               
-              // Divisão de inteiros//
-              iHoras = iQtdSegundos / 3600;
-              iMinutos = (iQtdSegundos - (iHoras*3600)) /60;
-              iSegundos = (iQtdSegundos (iHoras/3600)) %60;
+            // Divisão de inteiros//
+            iHoras = iQtdSegundos / 3600;
+            iMinutos = (iQtdSegundos - (iHoras*3600)) /60;
+            iSegundos = (iQtdSegundos (iHoras/3600)) %60;
 
-              printf("Hora convertida %02d:%02d:%02d", iHoras, iMinutos, iSegundos);
-              return 0; 
-            }`
+            printf("Hora convertida %02d:%02d:%02d", iHoras, iMinutos, iSegundos);
+            return 0; 
+          }`
         }
         />
         <p className="mt-12">
           2. Dado um número inteiro de segundos, mostrar a quantas horas, minutos e segundos ele corresponde.
         </p>
         <CodeBlock code={`
-          #include <stdio.h> 
-          #include <stdlib.h>
+        #include <stdio.h> 
+        #include <stdlib.h>
 
-            int main(void) { 
-              //declaração de variáveis do tipo inteiro 
-                int a, b, soma
+          int main(void) { 
+            //declaração de variáveis do tipo inteiro 
+              int a, b, soma
 
-                printf ("Digite um número inteiro: ");
-                scanf("%d", &a); //recebe um inteiro e armazena na variável a
+              printf ("Digite um número inteiro: ");
+              scanf("%d", &a); //recebe um inteiro e armazena na variável a
 
-                printf ("Digite um número inteiro: ");
-                scanf("%d", &b); //recebe um inteiro e armazena na variável b
-                soma = a + b;
-                //efetua adição de a com b e armazena na variável soma
+              printf ("Digite um número inteiro: ");
+              scanf("%d", &b); //recebe um inteiro e armazena na variável b
+              soma = a + b;
+              //efetua adição de a com b e armazena na variável soma
                 
-                printf("O valor da soma é: = %d", soma); //mostra mensagem com o resultado 
+              printf("O valor da soma é: = %d", soma); //mostra mensagem com o resultado 
 
-                system ("pause");
-                return 0; 
-              }`
+              system ("pause");
+              return 0; 
+          }`
         }
         />
 
@@ -147,32 +165,42 @@ const page = () => {
             1. Leia três números inteiros digitados em uma única linha, separados por espaços, e mostre-os um por um.
           </p>
           <p className="mt-6">
-            2. Leia três letras (caracteres) do usuário, uma por uma, e exiba-as todas juntas em uma linha. 
+            2. Leia três letras (caracteres) do usuário, uma por uma, e exiba-as todas juntas em uma linha.
           </p>
           <p className="mt-6">
-            3. Peça ao usuário um número decimal (float) e mostre o mesmo número com 1, 2 e 3 casas decimais, usando printf(). Dica: printf(“%.2f”, num); 
+            3. Peça ao usuário um número decimal (float) e mostre o mesmo número com 1, 2 e 3 casas decimais, usando printf(). Dica: printf(“%.2f”, num);
           </p>
           <p className="mt-6">
-            4. Crie um programa que leia o nome, a idade e o peso de uma pessoa, e depois mostre todas essas informações. 
+            4. Crie um programa que leia o nome, a idade e o peso de uma pessoa, e depois mostre todas essas informações.
           </p>
           <p className="mt-6">
-            5. O que faz o seguinte programa em C? 
+            5. O que faz o seguinte programa em C?
           </p>
           <CodeBlock code={`
-            #include <stdio.h> 
+          #include <stdio.h> 
 
-              int main(void) { 
-                int i = 2
+            int main(void) { 
+              int i = 2
 
-                printf ("O valor de i = %d ", i); 
-                return 0; 
-              }`
+              printf ("O valor de i = %d ", i); 
+              return 0; 
+            }`
           }
           />
-          <p>a) Nada</p>
-          <p>b) Imprime: O valor de i = 2	</p>
-          <p>c) Imprime: \n O valor de i = %d </p>
-          <p>d) Pula para a próxima linha e imprime: O valor de i = 2 </p>
+          <div className="mt-6">
+            <p>
+              a) Nada
+            </p>
+            <p>
+              b) Imprime: O valor de i = 2
+            </p>
+            <p>
+              c) Imprime: \n O valor de i = %d
+            </p>
+            <p>
+              d) Pula para a próxima linha e imprime: O valor de i = 2
+            </p>
+          </div>
         </section>
       </section>
     </main>
