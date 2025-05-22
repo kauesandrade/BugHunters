@@ -112,7 +112,7 @@ int main() {
 
     area = (base * altura) / 2;
 
-    printf("A área do triângulo é %.2f\n", area);
+    printf("A área do triângulo é %.2f\\n", area);
 
     return 0;
 }`}
@@ -131,7 +131,7 @@ int main() {
 
     milhas = km * 0.621371;
 
-    printf("%.2f quilômetros equivalem a %.2f milhas\n", km, milhas);
+    printf("%.2f quilômetros equivalem a %.2f milhas\\n", km, milhas);
 
     return 0;
 }`}
@@ -157,7 +157,7 @@ int main() {
 
     media = (idade1 + idade2 + idade3) / 3.0;
 
-    printf("A média das idades é %.2f\n", media);
+    printf("A média das idades é %.2f\\n", media);
 
     return 0;
 }`}
@@ -178,11 +178,11 @@ int main() {
     scanf("%d", &num2);
 
     if (num1 > num2) {
-        printf("O maior número é %d\n", num1);
+        printf("O maior número é %d\\n", num1);
     } else if (num2 > num1) {
-        printf("O maior número é %d\n", num2);
+        printf("O maior número é %d\\n", num2);
     } else {
-        printf("Os dois números são iguais.\n");
+        printf("Os dois números são iguais.");
     }
 
     return 0;
