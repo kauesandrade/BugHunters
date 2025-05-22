@@ -6,11 +6,12 @@ import blocoDocumento from '../../../../public/BlocoDocumento.png';
 import blocoExibicao from '../../../../public/BlocoExibicao.png';
 import blocoInicio from '../../../../public/BlocoInicio.png';
 import blocoProcesso from '../../../../public/BlocoProcesso.png';
+import SolutionBlock from '@/components/SolutionBlock';
 
 const Modulo1 = () => {
     return (
         <>
-            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14 pt-49">
+            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14 pt-49 pb-[200px]">
                 <div className="flex flex-col gap-10">
                     <h2 className="text-4xl font-semibold">Lógica de Programação</h2>
                     <div className="flex flex-col gap-4">
@@ -68,7 +69,7 @@ const Modulo1 = () => {
                         <div className="flex flex-row border-t gap-8 items-center pt-4">
                             <div className="w-1/4 flex justify-center">
                                 <img src={blocoInicio.src}></img>
-                            </div>  
+                            </div>
                             <p><span className="font-medium text-orange">Início/Fim</span> - Representa os potenciais inícios e fins do programa </p>
                         </div>
 
@@ -108,6 +109,38 @@ const Modulo1 = () => {
                         </div>
 
                         <p className="mb-6">Em projetos de software, fluxogramas são muito úteis para definir o escopo inicial e a maior parte das lógicas que serão feitas nele. Algumas das ferramentas mais comuns para a criação de fluxogramas são o <a className="text-orange underline decoration-orange" href="https://app.diagrams.net/">draw.io</a> e o <a className="text-orange underline decoration-orange" href="https://www.lucidchart.com/">Lucidchart</a>.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div className="flex flex-col gap-10">
+                        <h2 className="text-4xl font-semibold">Exercícios</h2>
+                        <div className="flex flex-col gap-4">
+                            <p>Construa um Fluxograma para cada sistema descrito abaixo: </p>
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-4 pt-4'>
+                        <SolutionBlock
+                            title='Um algoritmo que leia um número diferente de zero e diga se este número é positivo ou negativo.'
+                            code={''}>
+                        </SolutionBlock>
+                        <SolutionBlock
+                            title='Um algoritmo que receba 3 números e informe qual o maior entre eles.'
+                            code={''}>
+                        </SolutionBlock>
+                        <SolutionBlock
+                            title='Um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa em dias. Leve em consideração o ano com 365 dias e o mês com 30. (Ex: 3 anos, 2 meses e 15 dias = 1170 dias.).'
+                            code={''}>
+                        </SolutionBlock>
+                    </div>
+
+                    <div className='pt-8'>
+                        <p>Além disso, você também pode acessar o Racha Cuca para realizar desafios de lógica!</p>
+                        <ol className='list-disc list-inside pt-2'>
+                            <li className='text-orange hover:underline underline-offset-4'> <a href="https://rachacuca.com.br/logica/problemas/teste-de-einstein/">Teste de Einstein </a></li>
+                            <li className='text-orange hover:underline underline-offset-4'> <a href="https://rachacuca.com.br/jogos/missionarios-e-canibais/">Missionários e canibais </a></li>
+                            <li className='text-orange hover:underline underline-offset-4'> <a href="https://rachacuca.com.br/logica/problemas/carros-antigos/">Carros antigos </a></li>
+                        </ol>
                     </div>
                 </div>
             </section>
