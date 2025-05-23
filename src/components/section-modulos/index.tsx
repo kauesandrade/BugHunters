@@ -11,7 +11,7 @@ type sectionModulesType = {
 const SectionModulos = ({title, description, modulos}:sectionModulesType) => {
 
     return (
-        <section className='flex flex-col gap-24 mt-50 w-full lg:px-45 px-20 min-h-screen'>
+        <section className='flex flex-col gap-24 mt-50 w-full lg:px-45 px-20 min-h-screen mb-10'>
             <div className='flex flex-col justify-center items-center gap-3'>
                 <h1 className='text-4xl font-bold'>{title}</h1>
                 <p className='text-lg font-light'>{description}</p>

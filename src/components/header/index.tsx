@@ -54,9 +54,6 @@ const Header = () => {
                     <li>
                         <a className="cursor-pointer" onClick={() => handleNavigation("/sobre")}>Sobre</a>
                     </li>
-                    <li>
-                        <a className="cursor-pointer" onClick={() => handleNavigation("/contato")}>Contato</a>
-                    </li>
                 </ul>
             </section>
             <section className="flex lg:hidden items-center font-extralight">
