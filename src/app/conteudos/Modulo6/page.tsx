@@ -2,7 +2,7 @@ import CodeBlock from "@/components/CodeBlock";
 
 const modulo6 = () => {
     return(
-        <main>
+        <main className="pt-49 pb-80">
             <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14">
                 <div className="flex flex-col gap-10">
                     <h2 className="text-4xl font-semibold">Estruturas de Repetição</h2>
