@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <section id="banner" className="flex flex-col">
             <div className='mt-20'></div>
-            <section  className="flex lg:flex-row flex-col bg-linear-to-r from-orange from-30% to-orange-600 to-100% lg:h-135 h-full w-full lg:px-45 px-20 py-20 gap-10 justify-between items-center ">
+            <section  className="flex xl:flex-row flex-col bg-linear-to-r from-orange from-30% to-orange-600 to-100% xl:h-135 h-full w-full xl:px-45 px-20 py-20 gap-10 justify-between items-center ">
 
                 <div className="bg-white rounded-4xl p-6 size-90 pt-1 shadow-lg relative">
 
@@ -21,7 +21,7 @@ const Banner = () => {
                     <img className="absolute mix-blend-multiply inset-25 size-40" src='/C.png'></img>
                 </div>
 
-                <div className="lg:w-[calc(100%-450px)] h-full flex flex-col justify-start items-start text-white gap-10">
+                <div className="xl:w-[calc(100%-450px)] h-full flex flex-col justify-start items-start text-white gap-10">
                     <h1 className="text-4xl font-bold">A linguagem C</h1>
                     <p className="">A linguagem C é uma linguagem de programação de propósito geral, desenvolvida por Dennis Ritchie entre 1969 e 1973 na Bell Labs. É uma das linguagens de programação mais populares e influentes, sendo amplamente utilizada em sistemas operacionais, software embarcado e aplicações de alto desempenho.</p>
                     <div className="w-full h-full relative overflow-hidden rounded-md">

@@ -11,7 +11,7 @@ import SolutionBlock from '@/components/SolutionBlock';
 const Modulo1 = () => {
     return (
         <>
-            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14 pt-49 pb-[200px]">
+            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14 pt-49 pb-80">
                 <div className="flex flex-col gap-10">
                     <h2 className="text-4xl font-semibold">Lógica de Programação</h2>
                     <div className="flex flex-col gap-4">

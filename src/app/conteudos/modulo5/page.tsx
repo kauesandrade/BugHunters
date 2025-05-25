@@ -5,7 +5,7 @@ import exemploFluxograma from '../../../../public/ExemploFluxogramaDecisao.png';
 
 const page = () => {
   return (
-    <main className="pt-49 pb-20 px-45 font-normal text-base text-justify">
+    <main className="pt-49 pb-80 px-45 font-normal text-base text-justify">
         <h2 className="font-semibold text-[2.5rem]">Estruturas Condicionais</h2>
         <p className="mt-6 mb-14">Uma estrutura condicional é baseada em uma condição que, caso seja atendida, o algoritmo irá tomar uma decisão determinada. Uma forma simples de representar uma estrutura de condição através de pseudocódigo está representada abaixo: </p>
         <CodeBlock code=
