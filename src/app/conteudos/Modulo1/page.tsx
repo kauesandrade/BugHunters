@@ -11,10 +11,12 @@ import fluxogramaAtividade1 from '../../../../public/FluxogramaAtividade1.png';
 import fluxogramaAtividade2 from '../../../../public/FluxogramaAtividade2.png';
 import fluxogramaAtividade3 from '../../../../public/FluxogramaAtividade3.png';
 
+import { ChevronRight } from 'lucide-react';
+
 const Modulo1 = () => {
     return (
         <>
-            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14 pt-49 pb-80">
+            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14 pt-49 pb-60">
                 <div className="flex flex-col gap-10">
                     <h2 className="text-4xl font-semibold">Lógica de Programação</h2>
                     <div className="flex flex-col gap-4">
@@ -157,6 +159,15 @@ const Modulo1 = () => {
                             <li className='text-orange hover:underline underline-offset-4'> <a href="https://rachacuca.com.br/logica/problemas/carros-antigos/">Carros antigos </a></li>
                         </ol>
                     </div>
+                </div>
+
+                <div className='mt-10 flex justify-end'>
+                    <a className='w-100 h-14 flex justify-center items-center cursor-pointer bg-orange rounded-xl hover:-translate-y-1 duration-300 hover:shadow-lg/20 shadow-orange'
+                        href={`/conteudos/modulo2`}
+                    >
+                        <b className='text-2xl font-bold text-black'>Próximo Módulo</b>
+                        <ChevronRight className='text-black' size={44}></ChevronRight>
+                    </a>
                 </div>
             </section>
         </>

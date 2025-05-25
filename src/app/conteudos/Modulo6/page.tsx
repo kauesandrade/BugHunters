@@ -1,5 +1,6 @@
 import CodeBlock from "@/components/CodeBlock";
 import SolutionBlock from "@/components/SolutionBlock";
+import { ChevronRight } from "lucide-react";
 
 const modulo6 = () => {
     return (
@@ -59,7 +60,7 @@ const modulo6 = () => {
                             Exemplo while:
                         </p>
                         <CodeBlock code=
-{`#include <stdio.h>
+                            {`#include <stdio.h>
     
 int main(){ 
     // Contador de numeros até 10 
@@ -92,7 +93,7 @@ int main(){
                             Exemplo Do while:
                         </p>
                         <CodeBlock code=
-{`#include <stdio.h>
+                            {`#include <stdio.h>
     
 int main() { 
     // contador de numeros até 10 
@@ -136,7 +137,7 @@ int main() {
                             Exemplo for:
                         </p>
                         <CodeBlock code=
-{`#include <stdio.h>
+                            {`#include <stdio.h>
 
 int main() { 
     // contador de numeros até 10 
@@ -265,6 +266,15 @@ int main() {
                     />
                 </div>
             </section>
+
+            <div className='mt-10 flex justify-end'>
+                <a className='w-100 h-14 flex justify-center items-center cursor-pointer bg-orange rounded-xl hover:-translate-y-1 duration-300 hover:shadow-lg/20 shadow-orange'
+                    href={`/conteudos/modulo7`}
+                >
+                    <b className='text-2xl font-bold text-black'>Próximo Módulo</b>
+                    <ChevronRight className='text-black' size={44}></ChevronRight>
+                </a>
+            </div>
         </main>
     );
 }

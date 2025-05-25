@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import exemploFluxograma from '../../../../public/ExemploFluxogramaDecisao.png';
 import SolutionBlock from "@/components/SolutionBlock";
+import { ChevronRight } from "lucide-react";
 
 const page = () => {
     return (
@@ -105,7 +106,7 @@ switch (valor)
                     <li className="mt-6">Um algoritmo para o cálculo de média de notas de um aluno. Esse algoritmo precisa buscar 3 notas de um aluno e calcular o conceito final entre A, B e C. Após o conceito, o sistema mostra se o aluno está reprovado caso o conceito seja C, ou aprovado caso contrário. (A = Maior que 8, B = Entre 6 e 8, C = Menor que 6). </li>
                 </ul>
                 <CodeBlock code=
-{`#include <stdio.h>
+                    {`#include <stdio.h>
 
 int main() {
 
@@ -157,7 +158,7 @@ int main() {
                     <li className="mt-12">Um algoritmo que pede um número de 1 até 7 e retorna um dia da semana correspondente a esse número: </li>
                 </ul>
                 <CodeBlock code=
-{`#include <stdio.h>
+                    {`#include <stdio.h>
 
 int main (void)
 { 
@@ -316,6 +317,14 @@ int main() {
                 </div>
             </section>
 
+            <div className='mt-10 flex justify-end'>
+                <a className='w-100 h-14 flex justify-center items-center cursor-pointer bg-orange rounded-xl hover:-translate-y-1 duration-300 hover:shadow-lg/20 shadow-orange'
+                    href={`/conteudos/modulo6`}
+                >
+                    <b className='text-2xl font-bold text-black'>Próximo Módulo</b>
+                    <ChevronRight className='text-black' size={44}></ChevronRight>
+                </a>
+            </div>
         </main>
     )
 }

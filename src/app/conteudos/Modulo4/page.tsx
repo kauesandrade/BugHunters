@@ -15,10 +15,10 @@ const Modulo4 = () => {
                 <div className="flex flex-col gap-10">
                     <h4 className="text-2xl font-medium underline underline-offset-4 decoration-orange">Operadores aritméticos</h4>
                     <div className="flex flex-col gap-4">
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange"><Plus/></span>  Adição</p>
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange"><Minus/></span>  Subtração</p>
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange"><Asterisk/></span>  Multiplicação</p>
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange"><Slash/></span>  Divisão</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange"><Plus /></span>  Adição</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange"><Minus /></span>  Subtração</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange"><Asterisk /></span>  Multiplicação</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange"><Slash /></span>  Divisão</p>
                         <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange"><Percent /></span>  Módulo (resto da divisão)</p>
                     </div>
                 </div>
@@ -26,19 +26,19 @@ const Modulo4 = () => {
                 <div className="flex flex-col gap-10">
                     <h4 className="text-2xl font-medium underline underline-offset-4 decoration-orange">Operadores relacionais</h4>
                     <div className="flex flex-col gap-4">
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><Equal/><Equal /></span>  Igual a</p>
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row">!<Equal/></span>  Diferente de</p>
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><ChevronLeft/></span>  Menor que</p>
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><ChevronRight/></span>  Maior que</p>
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><ChevronLeft /><Equal/></span>  Menor ou igual a</p>
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><ChevronRight /><Equal/></span>  Maior ou igual a</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><Equal /><Equal /></span>  Igual a</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row">!<Equal /></span>  Diferente de</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><ChevronLeft /></span>  Menor que</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><ChevronRight /></span>  Maior que</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><ChevronLeft /><Equal /></span>  Menor ou igual a</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><ChevronRight /><Equal /></span>  Maior ou igual a</p>
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-10">
                     <h4 className="text-2xl font-medium underline underline-offset-4 decoration-orange">Operadores Lógicos</h4>
                     <div className="flex flex-col gap-4">
-                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><Ampersand/><Ampersand /></span>  E (AND) – retorna true se ambos forem true.</p>
+                        <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange flex flex-row"><Ampersand /><Ampersand /></span>  E (AND) – retorna true se ambos forem true.</p>
                         <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange">||</span>  Ou (OR) – retorna true se pelo menos um for true.</p>
                         <p className="bg-[#302B28] border-1 border-orange rounded-lg p-2 flex gap-2 font-light"><span className="font-bold text-orange">!</span>  Não (NOT) – inverte o valor lógico.</p>
                     </div>
@@ -55,12 +55,12 @@ const Modulo4 = () => {
                     </div>
                 </div>
                 <section>
-                <h3 className="font-medium text-2xl underline underline-offset-4 decoration-orange">
-                    Exemplos de códigos
-                </h3>
-                <p className="mt-6 mb-14">Este programa solicita por dois números e imprime o maior na tela utilizando do operador relacional "&gt;".</p>
-                <CodeBlock code=
-{`#include <stdio.h> 
+                    <h3 className="font-medium text-2xl underline underline-offset-4 decoration-orange">
+                        Exemplos de códigos
+                    </h3>
+                    <p className="mt-6 mb-14">Este programa solicita por dois números e imprime o maior na tela utilizando do operador relacional "&gt;".</p>
+                    <CodeBlock code=
+                        {`#include <stdio.h> 
 
 int main(void) { 
     int num1, num2; 
@@ -81,10 +81,10 @@ int main(void) {
 
     return 0;
 }`}
-/>
-                <p className="mt-14 mb-14">Código que verifica se o número digitado é um número ímpar ou par.</p>
-                <CodeBlock code=
-{`#include <stdio.h>
+                    />
+                    <p className="mt-14 mb-14">Código que verifica se o número digitado é um número ímpar ou par.</p>
+                    <CodeBlock code=
+                        {`#include <stdio.h>
 
 int main(void)
 {
@@ -104,18 +104,18 @@ int main(void)
 
     return 0;
 }`}
-/>
-            </section>
-            <section>
-                <h3 className="font-medium text-2xl underline underline-offset-4 decoration-orange">
-                    Exercícios
-                </h3>
+                    />
+                </section>
+                <section>
+                    <h3 className="font-medium text-2xl underline underline-offset-4 decoration-orange">
+                        Exercícios
+                    </h3>
 
-                <div className="flex flex-col gap-4 mt-8">
-                    <SolutionBlock
-                        title={"Converta temperatura de Celsius para Fahrenheit"}
-                        code=
-{`#include <stdio.h>
+                    <div className="flex flex-col gap-4 mt-8">
+                        <SolutionBlock
+                            title={"Converta temperatura de Celsius para Fahrenheit"}
+                            code=
+                            {`#include <stdio.h>
 
 int main(void)
 {
@@ -130,12 +130,12 @@ int main(void)
 
     return 0;
 }`}
-                    />
+                        />
 
-                    <SolutionBlock
-                        title={"Determine se uma pessoa é maior de idade"}
-                        code=
-{`#include <stdio.h>
+                        <SolutionBlock
+                            title={"Determine se uma pessoa é maior de idade"}
+                            code=
+                            {`#include <stdio.h>
 
 int main(void)
 {
@@ -155,12 +155,12 @@ int main(void)
 
     return 0;
 }`}
-                    />
+                        />
 
-                    <SolutionBlock
-                        title={"Descubra o salário do mês de alguém, perguntando-o quanto ele ganha por hora e quantas horas foram trabalhadas"}
-                        code=
-{`#include <stdio.h>
+                        <SolutionBlock
+                            title={"Descubra o salário do mês de alguém, perguntando-o quanto ele ganha por hora e quantas horas foram trabalhadas"}
+                            code=
+                            {`#include <stdio.h>
 
 int main(void)
 {
@@ -176,12 +176,12 @@ int main(void)
     
     return 0;
 }`}
-                    />
+                        />
 
-                    <SolutionBlock
-                        title={"Verifique se três números formam um triângulo"}
-                        code=
-{`#include <stdio.h>
+                        <SolutionBlock
+                            title={"Verifique se três números formam um triângulo"}
+                            code=
+                            {`#include <stdio.h>
 
 int main(void)
 {
@@ -208,10 +208,17 @@ int main(void)
 
     return 0;
 }`}
-                    />
+                        />
+                    </div>
+                </section>
+                <div className='flex justify-end'>
+                    <a className='w-100 h-14 flex justify-center items-center cursor-pointer bg-orange rounded-xl hover:-translate-y-1 duration-300 hover:shadow-lg/20 shadow-orange'
+                        href={`/conteudos/modulo5`}
+                    >
+                        <b className='text-2xl font-bold text-black'>Próximo Módulo</b>
+                        <ChevronRight className='text-black' size={44}></ChevronRight>
+                    </a>
                 </div>
-            </section>
-
             </section>
         </>
     )
