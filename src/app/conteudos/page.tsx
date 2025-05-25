@@ -22,14 +22,14 @@ const Conteudos = () => {
                     },
                     {
                       icon: <Boxes className="text-orange" size={"48px"} />,
-                      titulo: "M3 - Tipos de Dados e Variáveis o Tipos primitivos",
-                      texto: 'Em "Tipos de Dados e Variáveis" ou "Tipos Primitivos em C", aprende-se a declarar, utilizar e entender os principais tipos de dados básicos da linguagem, como int, float, char e double, além de como armazenar e manipular valores na memória por meio de variáveis!',
+                      titulo: "M3 - Tipos de Dados e Variáveis",
+                      texto: 'Em "Tipos de Dados e Variáveis", aprende-se a declarar, utilizar e entender os principais tipos de dados básicos da linguagem, como int, float, char e double, além de como armazenar e manipular valores na memória por meio de variáveis!',
                       link: "/modulo3"
                     },
                     {
                       icon: <Equal className="text-orange" size={"48px"} />,
-                      titulo: "M4 - Operadores relacionais",
-                      texto: "Os operadores relacionais em C são usados para comparar valores e retornam resultados booleanos, permitindo a tomada de decisões, como ==, !=, >, <, >=, e <=.",
+                      titulo: "M4 - Operadores e Expressões",
+                      texto: "Os operadores em C são usados para comparar valores, realizar contas e concatenar expressões.",
                       link: "/modulo4"
                     },
                     {

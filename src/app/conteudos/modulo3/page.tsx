@@ -43,6 +43,9 @@ int main()
                 </ul>
                 <CodeBlock code=
                     {`#include <stdio.h>
+
+#define PI 3.14 
+
 int main()
 {
     const int ano = 2025;

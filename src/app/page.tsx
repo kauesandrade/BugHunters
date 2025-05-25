@@ -27,14 +27,14 @@ export default function Home() {
         },
         {
           icon: <Boxes className="text-orange" size={"48px"} />,
-          titulo: "M3 - Tipos de Dados e Variáveis o Tipos primitivos",
-          texto: 'Em "Tipos de Dados e Variáveis" ou "Tipos Primitivos em C", aprende-se a declarar, utilizar e entender os principais tipos de dados básicos da linguagem, como int, float, char e double, além de como armazenar e manipular valores na memória por meio de variáveis!',
+          titulo: "M3 - Tipos de Dados e Variáveis",
+          texto: 'Em "Tipos de Dados e Variáveis", aprende-se a declarar, utilizar e entender os principais tipos de dados básicos da linguagem, como int, float, char e double, além de como armazenar e manipular valores na memória por meio de variáveis!',
           link: "/modulo3"
         },
         {
           icon: <Equal className="text-orange" size={"48px"} />,
-          titulo: "M4 - Operadores relacionais",
-          texto: "Os operadores relacionais em C são usados para comparar valores e retornam resultados booleanos, permitindo a tomada de decisões, como ==, !=, >, <, >=, e <=.",
+          titulo: "M4 - Operadores e Expressões",
+          texto: "Os operadores em C são usados para comparar valores, realizar contas e concatenar expressões.",
           link: "/modulo4"
         },
         {
@@ -57,7 +57,8 @@ export default function Home() {
         },
       ]}
     />
-    <section className='relative w-201 h-75 m-auto mt-40 mb-80'>
+    <span className='mb-70'></span>
+    {/* <section className='relative w-201 h-75 m-auto mt-40 mb-80'>
         <div className="z-2 absolute w-65 h-52 bg-orange rounded-3xl flex justify-center items-center">
           <GraduationCap className="text-black" size={"96px"} />
         </div>
@@ -79,7 +80,7 @@ export default function Home() {
         </div>
         <div className="z-3 absolute bottom-0 bg-black rounded-tr-3xl w-33 h-23">
         </div>
-    </section>
+    </section> */}
     </>
   );
 }
