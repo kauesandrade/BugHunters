@@ -3,7 +3,7 @@
 import { ReactElement } from "react";
 
 type cardModuloType = {
-    icon?: ReactElement<any, any>
+    icon?: ReactElement<string, string>
     titulo: string
     texto: string
     link: string
