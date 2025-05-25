@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/CodeBlock";
+import SolutionBlock from "@/components/SolutionBlock";
 import Image from "next/image";
 
 const page = () => {
@@ -73,48 +74,121 @@ int main()
                 />
             </section>
             <section>
-                <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
-                    Exemplos de códigos
-                </h3>
-                <p className="mt-6 mb-14">Código para a soma de dois números, utilizando o tipo int para resolução.</p>
-                <CodeBlock code=
-{`#include <stdio.h> 
+                <h3 className="mt-14 font-semibold text-[2.5rem]">Atividades</h3>
 
-int main() { 
-    int num1, num2, soma; 
+                <div className="flex flex-col gap-4 mt-8">
+                    <SolutionBlock
+                        title={"Escreva um programa que calcula o dobro de um número inteiro."}
+                        code=
+{`#include <stdio.h>
 
-    printf("Digite dois números inteiros: "); 
-    scanf("%d %d", &num1, &num2); 
-    soma = num1 + num2; 
+int main() {
+    int numero, dobro;
 
-    printf("A soma é: %d\\n", soma); 
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
 
-    return 0; 
-}`}
-/>
-                <p className="mt-14 mb-14">Código para o cálculo da área de um círculo, utilizando o tipo float para resolução.</p>
-                <CodeBlock code=
-{`#include <stdio.h>  
+    dobro = numero * 2;
 
-#define PI 3.14 
-
-int main() {  
-    float raio, area;  
-
-    printf("Digite o raio do círculo: ");  
-    scanf("%f", &raio); 
-    area = PI * raio * raio;
-
-	printf("A área do círculo é: %.2f\\n", area);
+    printf("O dobro de %d é %d\\n", numero, dobro);
 
     return 0;
 }`}
-/>
-            </section>
-            <section>
-                <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
-                    Exercícios
-                </h3>
+                    />
+
+                    <SolutionBlock
+                        title={"Escreva um programa que receba a base e a altura de um triângulo e calcule sua área."}
+                        code=
+{`#include <stdio.h>
+
+int main() {
+    float base, altura, area;
+
+    printf("Digite a base do triângulo: ");
+    scanf("%f", &base);
+
+    printf("Digite a altura do triângulo: ");
+    scanf("%f", &altura);
+
+    area = (base * altura) / 2;
+
+    printf("A área do triângulo é %.2f\\n", area);
+
+    return 0;
+}`}
+                    />
+
+                    <SolutionBlock
+                        title={"Crie um programa que converta uma medida de quilômetros para milhas (1 quilômetro = 0.621371 milhas)."}
+                        code=
+{`#include <stdio.h>
+
+int main() {
+    float km, milhas;
+
+    printf("Digite a distância em quilômetros: ");
+    scanf("%f", &km);
+
+    milhas = km * 0.621371;
+
+    printf("%.2f quilômetros equivalem a %.2f milhas\\n", km, milhas);
+
+    return 0;
+}`}
+                    />
+
+                    <SolutionBlock
+                        title={"Implemente um algoritmo que leia a idade de 3 pessoas e calcule a média das idades."}
+                        code=
+{`#include <stdio.h>
+
+int main() {
+    int idade1, idade2, idade3;
+    float media;
+
+    printf("Digite a idade da primeira pessoa: ");
+    scanf("%d", &idade1);
+
+    printf("Digite a idade da segunda pessoa: ");
+    scanf("%d", &idade2);
+
+    printf("Digite a idade da terceira pessoa: ");
+    scanf("%d", &idade3);
+
+    media = (idade1 + idade2 + idade3) / 3.0;
+
+    printf("A média das idades é %.2f\\n", media);
+
+    return 0;
+}`}
+                    />
+
+                    <SolutionBlock
+                        title={"Desenvolva um código que leia 2 números inteiros e determine o maior valor entre eles."}
+                        code=
+{`#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    printf("Digite o primeiro número inteiro: ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo número inteiro: ");
+    scanf("%d", &num2);
+
+    if (num1 > num2) {
+        printf("O maior número é %d\\n", num1);
+    } else if (num2 > num1) {
+        printf("O maior número é %d\\n", num2);
+    } else {
+        printf("Os dois números são iguais.");
+    }
+
+    return 0;
+}`}
+                    />
+                </div>
             </section>
         </main>
     )
