@@ -53,11 +53,11 @@ const modulo6 = () => {
                             repetição deve ou não continuar.
                         </p>
                         <p className="mt-4">
-                            A partir das alterações alterações dentro do código, o valor condicional deve ser alterado a
+                            A partir das alterações dentro do código, o valor condicional deve ser alterado a
                             fim de evitar &quot;loops infinitos&quot; e como consequências travar o programa.
                         </p>
                         <p className="mt-4 mb-14 underline underline-offset-4 decoration-orange">
-                            Exemplo while:
+                            Exemplo While:
                         </p>
                         <CodeBlock code=
                             {`#include <stdio.h>
@@ -85,12 +85,12 @@ int main(){
                             2 - Do While
                         </h4>
                         <p className="mt-4">
-                            O &quot;Do While&quot; funciona da mesma forma que um &quot;while&quot; normal, mas diferentemente do &quot;while&quot; que primeiro faz a
+                            O &quot;Do While&quot; funciona da mesma forma que um &quot;While&quot; normal, mas diferentemente do &quot;While&quot; que primeiro faz a
                             verificação da condição antes de rodar o código, o &quot;Do While&quot; primeiro roda o
                             código e em seguida faz a verificação.
                         </p>
                         <p className="mt-4 mb-14 underline underline-offset-4 decoration-orange">
-                            Exemplo Do while:
+                            Exemplo Do While:
                         </p>
                         <CodeBlock code=
                             {`#include <stdio.h>
@@ -117,7 +117,7 @@ int main() {
                             3 - For
                         </h4>
                         <p className="mt-4">
-                            O for tem uma estrutura um pouco mais complexa que o While e Do While, ele possui três pilares
+                            O for tem uma estrutura um pouco mais complexa que o &quot;While&quot; e &quot;Do While&quot;, ele possui três pilares
                         </p>
                         <div className="mt-4">
                             <p>
@@ -134,7 +134,7 @@ int main() {
                             Além disso, já que ele possui uma sintaxe mais rígida, é difícil ter problemas com &quot;loop infinito&quot;.
                         </p>
                         <p className="mt-4 mb-14 underline underline-offset-4 decoration-orange">
-                            Exemplo for:
+                            Exemplo For:
                         </p>
                         <CodeBlock code=
                             {`#include <stdio.h>
