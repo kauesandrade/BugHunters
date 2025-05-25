@@ -7,6 +7,10 @@ import blocoExibicao from '../../../../public/BlocoExibicao.png';
 import blocoInicio from '../../../../public/BlocoInicio.png';
 import blocoProcesso from '../../../../public/BlocoProcesso.png';
 
+import fluxogramaAtividade1 from '../../../../public/FluxogramaAtividade1.png';
+import fluxogramaAtividade2 from '../../../../public/FluxogramaAtividade2.png';
+import fluxogramaAtividade3 from '../../../../public/FluxogramaAtividade3.png';
+
 const Modulo1 = () => {
     return (
         <>
@@ -118,17 +122,32 @@ const Modulo1 = () => {
                             <p>Construa um Fluxograma para cada sistema descrito abaixo: </p>
                         </div>
                     </div>
-                    <ul className='flex flex-col gap-4 pt-4 list-disc list-inside pl-8 indent-[-24px]'>
-                        <li>
-                            Um algoritmo que leia um número diferente de zero e diga se este número é positivo ou negativo.
-                        </li>                        
-                        <li>
-                            Um algoritmo que receba 3 números e informe qual o maior entre eles.
-                        </li>
-                        <li>
-                            Um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa em dias. Leve em consideração o ano com 365 dias e o mês com 30. (Ex: 3 anos, 2 meses e 15 dias = 1170 dias.).
-                        </li>
-                    </ul>
+                    <div className='flex flex-col gap-4 pt-4'>
+                        <details className="bg-[#302B28] rounded-xl">
+                            <summary className="text-orange px-2 py-3 select-none cursor-pointer"><span className="text-white">Um algoritmo que leia um número diferente de zero e diga se este número é positivo ou negativo.</span></summary>
+                            <div className="p-6">
+                                <div className='bg-[#1F1E21] flex justify-center'>
+                                    <img className="pt-6 pb-10 w-3/6" src={fluxogramaAtividade1.src}></img>
+                                </div>
+                            </div>
+                        </details>
+                        <details className="bg-[#302B28] rounded-xl">
+                            <summary className="text-orange px-2 py-3 select-none cursor-pointer"><span className="text-white">Um algoritmo que receba 3 números e informe qual o maior entre eles.</span></summary>
+                            <div className="p-6">
+                                <div className='bg-[#1F1E21] flex justify-center'>
+                                    <img className="pt-6 pb-10 w-3/5" src={fluxogramaAtividade2.src}></img>
+                                </div>
+                            </div>
+                        </details>
+                        <details className="bg-[#302B28] rounded-xl">
+                            <summary className="text-orange px-2 py-3 select-none cursor-pointer"><span className="text-white">Um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa em dias. Leve em consideração o ano com 365 dias e o mês com 30. (Ex: 3 anos, 2 meses e 15 dias = 1170 dias.).</span></summary>
+                            <div className="p-6">
+                                <div className='bg-[#1F1E21] flex justify-center'>
+                                    <img className="pt-6 pb-10 w-2/5" src={fluxogramaAtividade3.src}></img>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
 
                     <div className='pt-8'>
                         <p>Além disso, você também pode acessar o Racha Cuca para realizar desafios de lógica!</p>
