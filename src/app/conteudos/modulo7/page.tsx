@@ -48,7 +48,7 @@ int main(void) {
         </h3>
         <p className="mt-6">
           O comando inserido é responsável por efetuar uma leitura do teclado onde é esperada a variável em float inserida (indicada por %f). O valor lido será armazenado no endereço da variável total.<br>
-          </br> Na lista de argumentos, iremos indicar os endereços das variáveis trabalhadas. Para isso, adicinaremos o símbolo "&", que será o prefixo na frente do nome da variável.
+          </br> Na lista de argumentos, iremos indicar os endereços das variáveis trabalhadas. Para isso, adicinaremos o símbolo &quot;&&quot;, que será o prefixo na frente do nome da variável.
         </p>
       </section>
 
@@ -74,7 +74,7 @@ int main(void) {
           printf()
         </h3>
         <p className="mt-6">
-          A função do "printf()" é exibir os valores na tela.
+          A função do &quot;printf()&quot; é exibir os valores na tela.
         </p>
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Sintaxe
@@ -98,8 +98,8 @@ int main(void) {
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Explicação
         </h3>
-        <p className="mt-6">"%f" representa o local onde será escrita a variável float
-          "total" é a variável float que será mostrada no lugar em que está o %f, substituindo-o.
+        <p className="mt-6">&quot;%f&quot; representa o local onde será escrita a variável float
+          &quot;total&quot; é a variável float que será mostrada no lugar em que está o %f, substituindo-o.
         </p>
       </section>
 

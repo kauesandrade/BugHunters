@@ -1,8 +1,7 @@
 import Cover from '@/components/home/cover';
 import Banner from '@/components/home/banner';
-import { ChevronUp, GraduationCap, Boxes, Brain, Cable, Code, Equal, RotateCcw, Split } from 'lucide-react';
+import { Boxes, Brain, Cable, Code, Equal, RotateCcw, Split } from 'lucide-react';
 import SectionModulos from '@/components/section-modulos';
-import Link from 'next/link';
 
 export default function Home() {
   return (

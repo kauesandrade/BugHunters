@@ -1,7 +1,6 @@
 import CodeBlock from "@/components/CodeBlock";
 import SolutionBlock from "@/components/SolutionBlock";
 import { ChevronRight } from "lucide-react";
-import Image from "next/image";
 
 const page = () => {
     return (

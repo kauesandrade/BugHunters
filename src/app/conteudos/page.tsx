@@ -1,5 +1,5 @@
 import SectionModulos from "@/components/section-modulos";
-import { Boxes, Brain, Cable, Code, Equal, Lightbulb, RotateCcw, Split } from "lucide-react";
+import { Boxes, Brain, Cable, Code, Equal, RotateCcw, Split } from "lucide-react";
 
 const Conteudos = () => {
     return (

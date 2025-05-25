@@ -54,7 +54,7 @@ const modulo6 = () => {
                         </p>
                         <p className="mt-4">
                             A partir das alterações alterações dentro do código, o valor condicional deve ser alterado a
-                            fim de evitar "loops infinitos" e como consequências travar o programa.
+                            fim de evitar &quot;loops infinitos&quot; e como consequências travar o programa.
                         </p>
                         <p className="mt-4 mb-14 underline underline-offset-4 decoration-orange">
                             Exemplo while:
@@ -85,8 +85,8 @@ int main(){
                             2 - Do While
                         </h4>
                         <p className="mt-4">
-                            O "Do While" funciona da mesma forma que um "while" normal, mas diferentemente do "while" que primeiro faz a
-                            verificação da condição antes de rodar o código, o "Do While" primeiro roda o
+                            O &quot;Do While&quot; funciona da mesma forma que um &quot;while&quot; normal, mas diferentemente do &quot;while&quot; que primeiro faz a
+                            verificação da condição antes de rodar o código, o &quot;Do While&quot; primeiro roda o
                             código e em seguida faz a verificação.
                         </p>
                         <p className="mt-4 mb-14 underline underline-offset-4 decoration-orange">
@@ -131,7 +131,7 @@ int main() {
                             </p>
                         </div>
                         <p className="mt-4">
-                            Além disso, já que ele possui uma sintaxe mais rígida, é difícil ter problemas com "lo"p infinito”.
+                            Além disso, já que ele possui uma sintaxe mais rígida, é difícil ter problemas com &quot;loop infinito&quot;.
                         </p>
                         <p className="mt-4 mb-14 underline underline-offset-4 decoration-orange">
                             Exemplo for:

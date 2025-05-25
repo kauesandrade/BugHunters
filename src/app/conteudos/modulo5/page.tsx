@@ -1,5 +1,4 @@
 import CodeBlock from "@/components/CodeBlock";
-import Image from "next/image";
 
 import exemploFluxograma from '../../../../public/ExemploFluxogramaDecisao.png';
 import SolutionBlock from "@/components/SolutionBlock";

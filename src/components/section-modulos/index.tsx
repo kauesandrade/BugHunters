@@ -1,6 +1,5 @@
 import React from 'react';
 import CardModulo, { cardModuloType } from  '../card-modulo/index';
-import { Lightbulb } from 'lucide-react';
 
 type sectionModulesType = {
     title: string;

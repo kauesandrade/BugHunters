@@ -58,7 +58,7 @@ const Modulo4 = () => {
                     <h3 className="font-medium text-2xl underline underline-offset-4 decoration-orange">
                         Exemplos de códigos
                     </h3>
-                    <p className="mt-6 mb-14">Este programa solicita por dois números e imprime o maior na tela utilizando do operador relacional "&gt;".</p>
+                    <p className="mt-6 mb-14">Este programa solicita por dois números e imprime o maior na tela utilizando do operador relacional &quot;&gt;&quot;.</p>
                     <CodeBlock code=
                         {`#include <stdio.h> 
 

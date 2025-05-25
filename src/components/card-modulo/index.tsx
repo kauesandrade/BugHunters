@@ -1,10 +1,9 @@
 'use client';
 
-import React from "react";
-import { useRouter } from "next/navigation";
+import { ReactElement } from "react";
 
 type cardModuloType = {
-    icon?: Element | any
+    icon?: ReactElement<any, any>
     titulo: string
     texto: string
     link: string
