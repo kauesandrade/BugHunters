@@ -5,7 +5,7 @@ import { Plus, Minus, Asterisk, Slash, Percent, Equal, ChevronRight, ChevronLeft
 const Modulo4 = () => {
     return (
         <>
-            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14 pb-[128px]">
+            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14 pb-80">
                 <div className="flex flex-col gap-10">
                     <h2 className="text-4xl font-semibold">Operadores relacionais</h2>
                 </div>

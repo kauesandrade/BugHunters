@@ -10,7 +10,7 @@ import blocoProcesso from '../../../../public/BlocoProcesso.png';
 const Modulo1 = () => {
     return (
         <>
-            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14 pt-49">
+            <section className="text-white px-[180px] pb-80 text-justify font-light flex flex-col gap-14 pt-49">
                 <div className="flex flex-col gap-10">
                     <h2 className="text-4xl font-semibold">Lógica de Programação</h2>
                     <div className="flex flex-col gap-4">
