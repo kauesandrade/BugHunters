@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/CodeBlock";
+import SolutionBlock from "@/components/SolutionBlock";
 import Image from "next/image";
 
 const page = () => {
@@ -30,17 +31,16 @@ const page = () => {
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Exemplo
         </h3>
-        <CodeBlock code={`
-        #include <stdio.h> 
+        <CodeBlock code={`#include <stdio.h> 
 
-          int main(void) { 
-            float total;
-            printf ("Digite o valor total: ");
-            // Lê o valor total digitado pelo usuário e armazena na variável total
-            scanf(“%f”, &total);
+int main(void) { 
+  float total;
+  printf ("Digite o valor total: ");
+  // Lê o valor total digitado pelo usuário e armazena na variável total
+  scanf("%f", &total);
 
-            return 0; 
-          }`
+  return 0; 
+}`
         }
         />
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
@@ -85,16 +85,15 @@ const page = () => {
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Exemplo
         </h3>
-        <CodeBlock code={`
-        #include <stdio.h> 
+        <CodeBlock code={`#include <stdio.h> 
 
-          int main(void) { 
-            float total;
-            printf ("Digite o valor total: ");
-            scanf(“%f”, &total);
-            // Exibe o valor total na tela
-            printf(“Total a pagar: R$ %f”, total);
-        `}
+int main(void) { 
+  float total;
+  printf ("Digite o valor total: ");
+  scanf("%f", &total);
+  // Exibe o valor total na tela
+  printf("Total a pagar: R$ %f", total);
+}`}
         />
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Explicação
@@ -111,96 +110,180 @@ const page = () => {
         <p className="mt-6">
           1. Faça um programa que solicite dois números ao usuário, calcule a soma desses números e imprima o resultado na tela.
         </p>
-        <CodeBlock code={`
-        #include <stdio.h> 
+        <CodeBlock code={`#include <stdio.h>
 
-          int main(void) { 
-            int iQtdSegundos, iHoras, iMinutos, iSegundos;
+int main(void) { 
+  //declaração de variáveis do tipo inteiro 
+  int a, b, soma;
 
-            printf ("Entre com o valor em segundos: ");
-            scanf("%d",&iQtdSegundos);
-              
-            // Divisão de inteiros//
-            iHoras = iQtdSegundos / 3600;
-            iMinutos = (iQtdSegundos - (iHoras*3600)) /60;
-            iSegundos = (iQtdSegundos (iHoras/3600)) %60;
+  printf ("Digite um número inteiro: ");
+  scanf("%d", &a); //recebe um inteiro e armazena na variável a
 
-            printf("Hora convertida %02d:%02d:%02d", iHoras, iMinutos, iSegundos);
-            return 0; 
-          }`
+  printf ("Digite um número inteiro: ");
+  scanf("%d", &b); //recebe um inteiro e armazena na variável b
+  soma = a + b;
+  //efetua adição de a com b e armazena na variável soma
+                
+  printf("O valor da soma é: %d", soma); //mostra mensagem com o resultado 
+
+  return 0; 
+}`
         }
         />
         <p className="mt-12">
           2. Dado um número inteiro de segundos, mostrar a quantas horas, minutos e segundos ele corresponde.
         </p>
-        <CodeBlock code={`
-        #include <stdio.h> 
-        #include <stdlib.h>
+        <CodeBlock code={`#include <stdio.h> 
 
-          int main(void) { 
-            //declaração de variáveis do tipo inteiro 
-              int a, b, soma
+int main(void) { 
+  int iQtdSegundos, iHoras, iMinutos, iSegundos;
 
-              printf ("Digite um número inteiro: ");
-              scanf("%d", &a); //recebe um inteiro e armazena na variável a
+  printf ("Entre com o valor em segundos: ");
+  scanf("%d",&iQtdSegundos);
+              
+  // Divisão de inteiros
+  iHoras = iQtdSegundos / 3600;
+  iMinutos = (iQtdSegundos - (iHoras*3600)) /60;
+  iSegundos = (iQtdSegundos - (iHoras/3600)) %60;
 
-              printf ("Digite um número inteiro: ");
-              scanf("%d", &b); //recebe um inteiro e armazena na variável b
-              soma = a + b;
-              //efetua adição de a com b e armazena na variável soma
-                
-              printf("O valor da soma é: = %d", soma); //mostra mensagem com o resultado 
-
-              system ("pause");
-              return 0; 
-          }`
+  printf("Hora convertida %02d:%02d:%02d", iHoras, iMinutos, iSegundos);
+  return 0; 
+}
+`
         }
         />
 
         <section>
-          <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
-            Exercícios
-          </h3>
-          <p className="mt-6">
-            1. Leia três números inteiros digitados em uma única linha, separados por espaços, e mostre-os um por um.
-          </p>
-          <p className="mt-6">
-            2. Leia três letras (caracteres) do usuário, uma por uma, e exiba-as todas juntas em uma linha.
-          </p>
-          <p className="mt-6">
-            3. Peça ao usuário um número decimal (float) e mostre o mesmo número com 1, 2 e 3 casas decimais, usando printf(). Dica: printf(“%.2f”, num);
-          </p>
-          <p className="mt-6">
-            4. Crie um programa que leia o nome, a idade e o peso de uma pessoa, e depois mostre todas essas informações.
-          </p>
-          <p className="mt-6">
-            5. O que faz o seguinte programa em C?
-          </p>
-          <CodeBlock code={`
-          #include <stdio.h> 
+          <h3 className="mt-14 font-semibold text-[2.5rem]">Atividades</h3>
 
-            int main(void) { 
-              int i = 2
+          <div className="flex flex-col gap-4 mt-8">
+            <SolutionBlock
+              title={"Escreva um programa que leia três números inteiros digitados em uma única linha, separados por espaços, e mostre-os um por um."}
+              code=
+              {`#include <stdio.h>
 
-              printf ("O valor de i = %d ", i); 
-              return 0; 
-            }`
-          }
-          />
-          <div className="mt-6">
-            <p>
-              a) Nada
-            </p>
-            <p>
-              b) Imprime: O valor de i = 2
-            </p>
-            <p>
-              c) Imprime: \n O valor de i = %d
-            </p>
-            <p>
-              d) Pula para a próxima linha e imprime: O valor de i = 2
-            </p>
+int main() {
+    int a, b, c;
+
+    printf("Digite três números inteiros separados por espaços: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    printf("Primeiro número: %d\\n", a);
+    printf("Segundo número: %d\\n", b);
+    printf("Terceiro número: %d\\n", c);
+
+    return 0;
+}
+`}
+            />
+
+            <SolutionBlock
+              title={"Escreva um programa que leia três letras (caracteres) do usuário, uma por uma, e exiba-as todas juntas em uma linha."}
+              code=
+              {`#include <stdio.h>
+
+int main() {
+    char l1, l2, l3;
+
+    printf("Digite a primeira letra: ");
+    scanf(" %c", &l1);  // Espaço antes do %c para ignorar enter anterior
+
+    printf("Digite a segunda letra: ");
+    scanf(" %c", &l2);
+
+    printf("Digite a terceira letra: ");
+    scanf(" %c", &l3);
+
+    printf("Letras digitadas: %c%c%c", l1, l2, l3);
+
+    return 0;
+}
+`}
+            />
+
+            <SolutionBlock
+              title={"Escreva um programa que peça ao usuário um número decimal (float) e mostre o mesmo número com 1, 2 e 3 casas decimais, usando printf(). Dica: printf(“%.2f”, num);"}
+              code=
+              {`#include <stdio.h>
+
+int main() {
+    float num;
+
+    printf("Digite um número decimal: ");
+    scanf("%f", &num);
+
+    printf("Com 1 casa decimal: %.1f\\n", num);
+    printf("Com 2 casas decimais: %.2f\\n", num);
+    printf("Com 3 casas decimais: %.3f\\n", num);
+
+    return 0;
+}
+`}
+            />
+
+            <SolutionBlock
+              title={"Crie um programa que leia o nome, a idade e o peso de uma pessoa, e depois mostre todas essas informações."}
+              code=
+              {`#include <stdio.h>
+
+int main() {
+    char nome[100];
+    int idade;
+    float peso;
+
+    printf("Digite seu nome: ");
+    fgets(nome, sizeof(nome), stdin);
+
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+
+    printf("Digite seu peso: ");
+    scanf("%f", &peso);
+
+    printf("\\nInformações:\\n");
+    printf("Nome: %s", nome);
+    printf("Idade: %d anos\\n", idade);
+    printf("Peso: %.2f kg\\n", peso);
+
+    return 0;
+}
+`}
+            />
           </div>
+
+          <details className="mt-5 bg-[#302B28] rounded-xl">
+            <summary className="text-orange px-2 py-3 select-none cursor-pointer">
+              <span className="text-white">O que faz o seguinte programa em C?</span>
+              <div className="m-6">
+                <CodeBlock code={`
+#include <stdio.h> 
+
+int main(void) { 
+  int i = 2;
+
+  printf ("O valor de i = %d ", i); 
+  return 0; 
+}`
+                }
+                />
+                <p className="mt-6 text-white">
+                  a) Nada
+                </p>
+                <p className="text-white">
+                  b) Imprime: O valor de i = 2
+                </p>
+                <p className="text-white">
+                  c) Imprime: \n O valor de i = %d
+                </p>
+                <p className="text-white">
+                  d) Pula para a próxima linha e imprime: O valor de i = 2
+                </p>
+              </div>
+            </summary>
+            <div className="p-2">
+              <p className="ml-6 mb-4 text-xl">Resposta correta: <b className="ml-4">b) Imprime: O valor de i = 2</b></p>
+            </div>
+          </details>
         </section>
       </section>
     </main>
