@@ -43,7 +43,7 @@ const Header = () => {
             <section className="flex items-center">
                 <img className="cursor-pointer" onClick={() => handleNavigation("/")} src="/logo.svg" alt="Logo Bug Hunters" />
             </section>
-            <section className="hidden xl:flex items-center font-extralight">
+            <section className="flex items-center font-extralight">
                 <ul className="flex font-medium gap-24">
                     <li>
                         <a className="cursor-pointer" onClick={() => handleNavigation("/conteudos")}>Conteúdos</a>
@@ -56,13 +56,13 @@ const Header = () => {
                     </li>
                 </ul>
             </section>
-            <section className="flex xl:hidden items-center font-extralight">
+            {/* <section className="flex xl:hidden items-center font-extralight">
                 <ul className="flex gap-24">
                     <li>
                         <a className="cursor-pointer" onClick={() => handleNavigation("/conteudos")}>Conteúdos</a>
                     </li>
                 </ul>
-            </section>
+            </section> */}
         </header>
     )
 }
