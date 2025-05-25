@@ -1,43 +1,44 @@
 import CodeBlock from "@/components/CodeBlock";
+import SolutionBlock from "@/components/SolutionBlock";
 
 const modulo6 = () => {
-    return(
-        <main className="pt-49 pb-80">
-            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14">
+    return (
+        <main className="pt-49 pb-80 px-45 font-normal text-base text-justify">
+            <section className="text-white text-justify font-light flex flex-col gap-14">
                 <div className="flex flex-col gap-10">
                     <h2 className="text-4xl font-semibold">Estruturas de Repetição</h2>
                     <div className="flex flex-col gap-4">
                         <p>
-                            Durante o curso nós vamos aprender mais sobre estruturas de repetição, que são de extrema 
+                            Durante o curso nós vamos aprender mais sobre estruturas de repetição, que são de extrema
                             importância para a redução de código, fazendo com que tarefas repetitivas possam ser feitas de forma mais simples
-                        </p>    
+                        </p>
                     </div>
                 </div>
             </section>
-            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14">
+            <section className="text-white text-justify font-light flex flex-col gap-14">
                 <div className="flex flex-col gap-10">
                     <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
                         Oque é Estrutura de Repetição?
                     </h3>
                     <p>
-                        Uma Estrutura de repetição é uma lógica que repete as ações de um determinado bloco de código 
+                        Uma Estrutura de repetição é uma lógica que repete as ações de um determinado bloco de código
                         por um número de vezes determinado a partir do tipo de repetição.
                     </p>
                 </div>
             </section>
-            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14">
+            <section className="text-white text-justify font-light flex flex-col gap-14">
                 <div className="flex flex-col gap-10">
                     <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
                         Quando devemos usar as Estruturas de Repetição?
                     </h3>
                     <p>
-                        É usada quando deve se executar um código múltiplas vezes, seja por um número definido de vezes ou até 
-                        que certa condição seja atendida. Elas também são essenciais para evitar repetições desnecessárias de 
-                        código e tornam o programa muito mais conciso e eficiente. 
+                        É usada quando deve se executar um código múltiplas vezes, seja por um número definido de vezes ou até
+                        que certa condição seja atendida. Elas também são essenciais para evitar repetições desnecessárias de
+                        código e tornam o programa muito mais conciso e eficiente.
                     </p>
                 </div>
             </section>
-            <section className="text-white px-[180px] text-justify font-light flex flex-col gap-14">
+            <section className="text-white text-justify font-light flex flex-col gap-14">
                 <div className="flex flex-col gap-10">
                     <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
                         Tipos de Estrutura de Repetição?
@@ -47,11 +48,11 @@ const modulo6 = () => {
                             1 - While
                         </h4>
                         <p className="mt-4">
-                            While é uma estrutura de repetição que utiliza um sistema condicional para verificar se a 
+                            While é uma estrutura de repetição que utiliza um sistema condicional para verificar se a
                             repetição deve ou não continuar.
                         </p>
                         <p className="mt-4">
-                            Apartir das alterações alterações dentro do código, o valor condicional deve ser alterado a 
+                            Apartir das alterações alterações dentro do código, o valor condicional deve ser alterado a
                             fim de evitar "loops infinitos" e como consequências travar o programa.
                         </p>
                         <p className="mt-4 underline underline-offset-4 decoration-orange">
@@ -84,9 +85,9 @@ int main(){
                             1 - Do While
                         </h4>
                         <p className="mt-4">
-                           O "Do While" funciona da mesma forma que um "while" normal, mas diferentemente do "while" que primeiro faz a 
-                           verificação da condição antes de rodar o código, o "Do While" primeiro roda o 
-                           código e em seguida faz a verificação. 
+                            O "Do While" funciona da mesma forma que um "while" normal, mas diferentemente do "while" que primeiro faz a
+                            verificação da condição antes de rodar o código, o "Do While" primeiro roda o
+                            código e em seguida faz a verificação.
                         </p>
                         <p className="mt-4 underline underline-offset-4 decoration-orange">
                             Exemplo Do while:
@@ -118,21 +119,21 @@ return 0;
                             1 - For
                         </h4>
                         <p className="mt-4">
-                            O for tem uma estrutura um pouco mais complexa que o While e Do While, ele possui três pilares  
+                            O for tem uma estrutura um pouco mais complexa que o While e Do While, ele possui três pilares
                         </p>
                         <div className="mt-4">
                             <p>
-                               1 – Uma variável contadora,  
+                                1 – Uma variável contadora,
                             </p>
                             <p>
-                               2 – Uma condição baseada na variável,
+                                2 – Uma condição baseada na variável,
                             </p>
                             <p>
-                                3 – Um pedaço de código que é executado ao final de cada repetição   
+                                3 – Um pedaço de código que é executado ao final de cada repetição
                             </p>
                         </div>
                         <p className="mt-4">
-                            Além disso, já que ele possui uma sintaxe mais rígida, é difícil ter problemas com “loop infinito”. 
+                            Além disso, já que ele possui uma sintaxe mais rígida, é difícil ter problemas com “loop infinito”.
                         </p>
                         <p className="mt-4 underline underline-offset-4 decoration-orange">
                             Exemplo for:
@@ -153,6 +154,132 @@ return 0;
 }  
                             `} />
                     </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 className="mt-14 font-semibold text-[2.5rem]">Atividades</h3>
+
+                <div className="flex flex-col gap-4 mt-8">
+                    <SolutionBlock
+                        title={"Faça um programa que conte de 1 até 10 e imprima os números na tela"}
+                        code=
+                        {`#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        printf("%d\\n", i);
+    }
+    return 0;
+}
+`}
+                    />
+
+                    <SolutionBlock
+                        title={"Faça um programa em que o usuário entra com um número N, e calcule a soma de 1 até N"}
+                        code=
+                        {`#include <stdio.h>
+
+int main() {
+    int n, soma = 0;
+
+    printf("Digite um número N: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        soma += i;
+    }
+
+    printf("A soma de 1 até %d é %d", n, soma);
+
+    return 0;
+}
+`}
+                    />
+
+                    <SolutionBlock
+                        title={"Faça um programa que solicite uma idade entre 1 e 120. Se o usuário digitar fora do intervalo, o programa repete o pedido."}
+                        code=
+                        {`#include <stdio.h>
+
+int main() {
+    int idade;
+
+    do {
+        printf("Digite uma idade entre 1 e 120: ");
+        scanf("%d", &idade);
+    } while (idade < 1 || idade > 120);
+
+    printf("Idade válida");
+
+    return 0;
+}
+`}
+                    />
+
+                    <SolutionBlock
+                        title={"Faça um programa que receba um número e exiba sua tabuada de 1 a 10."}
+                        code=
+                        {`#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Digite um número para ver sua tabuada: ");
+    scanf("%d", &num);
+
+    for (int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\\n", num, i, num * i);
+    }
+
+    return 0;
+}
+`}
+                    />
+
+                    <SolutionBlock
+                        title={"Faça um programa que escolha um número aleatório. O usuário tenta adivinhar até acertar."}
+                        code=
+                        {`#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int chute, numero_secreto;
+
+    srand(time(NULL));
+    numero_secreto = rand() % 100 + 1;
+
+    printf("Tente adivinhar o número entre 1 e 100!\\n");
+
+    do {
+        printf("Número: ");
+        scanf("%d", &chute);
+
+        if (chute == numero_secreto) {
+            printf("Parabéns! Você acertou!");
+        }
+    } while (chute != numero_secreto);
+
+    return 0;
+}
+`}
+                    />
+
+                    <SolutionBlock
+                        title={"Faça um programa que conte de 10 até 1."}
+                        code=
+                        {`#include <stdio.h>
+
+int main() {
+    for (int i = 10; i >= 1; i--) {
+        printf("%d\\n", i);
+    }
+
+    return 0;
+}
+`}
+                    />
                 </div>
             </section>
         </main>
