@@ -28,7 +28,7 @@ const page = () => {
           Sintaxe
         </h3>
         <p className="mt-6">scanf(“expressão de controle”, lista de argumentos);</p>
-        <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
+        <h3 className="mt-14 mb-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Exemplo
         </h3>
         <CodeBlock code={`#include <stdio.h> 
@@ -74,7 +74,7 @@ int main(void) {
           printf()
         </h3>
         <p className="mt-6">
-          A função do "scanf()" é exibir os valores na tela.
+          A função do "printf()" é exibir os valores na tela.
         </p>
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Sintaxe
@@ -82,7 +82,7 @@ int main(void) {
         <p className="mt-6">
           printf(“Mensagem a ser escrita na tela”, lista de argumentos);
         </p>
-        <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
+        <h3 className="mt-14 mb-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Exemplo
         </h3>
         <CodeBlock code={`#include <stdio.h> 
@@ -107,8 +107,8 @@ int main(void) {
         <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
           Exemplos de código
         </h3>
-        <p className="mt-6">
-          1. Faça um programa que solicite dois números ao usuário, calcule a soma desses números e imprima o resultado na tela.
+        <p className="mt-6 mb-14">
+          Programa que solicita dois números ao usuário, calcula a soma desses números e imprime o resultado na tela.
         </p>
         <CodeBlock code={`#include <stdio.h>
 
@@ -130,8 +130,8 @@ int main(void) {
 }`
         }
         />
-        <p className="mt-12">
-          2. Dado um número inteiro de segundos, mostrar a quantas horas, minutos e segundos ele corresponde.
+        <p className="mt-12 mb-14">
+          Dado um número inteiro de segundos, mostra quantas horas, minutos e segundos ele corresponde.
         </p>
         <CodeBlock code={`#include <stdio.h> 
 
@@ -250,40 +250,6 @@ int main() {
 `}
             />
           </div>
-
-          <details className="mt-5 bg-[#302B28] rounded-xl">
-            <summary className="text-orange px-2 py-3 select-none cursor-pointer">
-              <span className="text-white">O que faz o seguinte programa em C?</span>
-              <div className="m-6">
-                <CodeBlock code={`
-#include <stdio.h> 
-
-int main(void) { 
-  int i = 2;
-
-  printf ("O valor de i = %d ", i); 
-  return 0; 
-}`
-                }
-                />
-                <p className="mt-6 text-white">
-                  a) Nada
-                </p>
-                <p className="text-white">
-                  b) Imprime: O valor de i = 2
-                </p>
-                <p className="text-white">
-                  c) Imprime: \n O valor de i = %d
-                </p>
-                <p className="text-white">
-                  d) Pula para a próxima linha e imprime: O valor de i = 2
-                </p>
-              </div>
-            </summary>
-            <div className="p-2">
-              <p className="ml-6 mb-4 text-xl">Resposta correta: <b className="ml-4">b) Imprime: O valor de i = 2</b></p>
-            </div>
-          </details>
         </section>
       </section>
     </main>

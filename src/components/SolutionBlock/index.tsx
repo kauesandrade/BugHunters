@@ -8,7 +8,7 @@ type SolutionBlockProps = {
 const SolutionBlock = ({title, code}: SolutionBlockProps) => {
   return (
     <details className="bg-[#302B28] rounded-xl">
-        <summary className="text-orange px-2 py-3 select-none cursor-pointer"><span className="text-white">{title}</span></summary>
+        <summary className="text-orange pl-2 pr-4 py-3 select-none cursor-pointer"><span className="text-white">{title}</span></summary>
         <div className="p-2">
             <CodeBlock code={code}/>
         </div>

@@ -73,26 +73,33 @@ SENÃO
                 />
                 <p className="mt-10 mb-14">Seguindo esse exemplo, a variável definida no início da estrutura será comparada em cada bloco “case”. Passando por cada bloco, caso essa variável definida atenda uma das condições em um desses blocos, as linhas de código dentro desse “case” serão executadas.</p>
                 <CodeBlock code=
-                    {`printf ("Digite um valor de 1 a 3: "); 
-scanf("%d", &valor); 
+{`#include <stdio.h>
 
-switch (valor) 
-{ 
-    case 1: 
+int main(void)
+{
+    int valor;
+    
+    printf ("Digite um valor de 1 a 3: "); 
+    scanf("%d", &valor); 
+    
+    switch (valor) 
+    { 
+        case 1: 
         printf ("Primeira Opção"); 
         break; 
-
-    case 2: 
+        
+        case 2: 
         printf ("Segunda Opção"); 
         break; 
-
-    case 3: 
+        
+        case 3: 
         printf ("Terceira Opção"); 
         break; 
-
-    default: 
+        
+        default: 
         printf ("Valor invalido!"); 
-} `}
+    }
+}`}
                 />
                 <p className="mt-10">No exemplo acima é possível ver um uso prático dessa estrutura, com uma variável recebendo um valor inteiro que deve ser de 1 até 3. No Switch-Case, é passado por cada valor possível e mostrada uma mensagem diferente para cada possibilidade. O uso do “break;” é muito necessário no final de cada bloco, porque evita que outra opção seja executada após a opção atual. </p>
                 <p className="mt-6">No final dessa estrutura, além dos Cases, também pode ser colocado o bloco “default”, que será executado somente caso nenhum dos “cases” for executado. Ou seja, nesse exemplo a linha default será executada caso o número seja menor que 1 ou maior que 3. </p>
