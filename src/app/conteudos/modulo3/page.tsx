@@ -1,5 +1,6 @@
 import CodeBlock from "@/components/CodeBlock";
 import SolutionBlock from "@/components/SolutionBlock";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 const page = () => {
@@ -82,7 +83,7 @@ int main()
                 </h3>
                 <p className="mt-6 mb-14">Código para a soma de dois números, utilizando o tipo int para resolução.</p>
                 <CodeBlock code=
-{`#include <stdio.h> 
+                    {`#include <stdio.h> 
 
 int main() { 
     int num1, num2, soma; 
@@ -95,10 +96,10 @@ int main() {
 
     return 0; 
 }`}
-/>
+                />
                 <p className="mt-14 mb-14">Código para o cálculo da área de um círculo, utilizando o tipo float para resolução.</p>
                 <CodeBlock code=
-{`#include <stdio.h>  
+                    {`#include <stdio.h>  
 
 #define PI 3.14 
 
@@ -113,7 +114,7 @@ int main() {
 
     return 0;
 }`}
-/>
+                />
             </section>
             <section>
                 <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
@@ -124,7 +125,7 @@ int main() {
                     <SolutionBlock
                         title={"Escreva um programa que calcula o dobro de um número inteiro"}
                         code=
-{`#include <stdio.h>
+                        {`#include <stdio.h>
 
 int main() {
     int numero, dobro;
@@ -143,7 +144,7 @@ int main() {
                     <SolutionBlock
                         title={"Escreva um programa que receba a base e a altura de um triângulo e calcule sua área"}
                         code=
-{`#include <stdio.h>
+                        {`#include <stdio.h>
 
 int main() {
     float base, altura, area;
@@ -165,7 +166,7 @@ int main() {
                     <SolutionBlock
                         title={"Crie um programa que converta uma medida de quilômetros para milhas (1 quilômetro = 0.621371 milhas)"}
                         code=
-{`#include <stdio.h>
+                        {`#include <stdio.h>
 
 int main() {
     float km, milhas;
@@ -184,7 +185,7 @@ int main() {
                     <SolutionBlock
                         title={"Implemente um algoritmo que leia a idade de 3 pessoas e calcule a média das idades"}
                         code=
-{`#include <stdio.h>
+                        {`#include <stdio.h>
 
 int main() {
     int idade1, idade2, idade3;
@@ -210,7 +211,7 @@ int main() {
                     <SolutionBlock
                         title={"Desenvolva um código que leia 2 números inteiros e determine o maior valor entre eles"}
                         code=
-{`#include <stdio.h>
+                        {`#include <stdio.h>
 
 int main() {
     int num1, num2;
@@ -234,6 +235,14 @@ int main() {
                     />
                 </div>
             </section>
+            <div className='mt-10 flex justify-end'>
+                <a className='w-100 h-14 flex justify-center items-center cursor-pointer bg-orange rounded-xl hover:-translate-y-1 duration-300 hover:shadow-lg/20 shadow-orange'
+                    href={`/conteudos/modulo4`}
+                >
+                    <b className='text-2xl font-bold text-black'>Próximo Módulo</b>
+                    <ChevronRight className='text-black' size={44}></ChevronRight>
+                </a>
+            </div>
         </main>
     )
 }
