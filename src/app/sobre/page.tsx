@@ -22,8 +22,8 @@ const Sobre = () => {
                     <li>Bernardo Planinscheck Zapelini: pesquisa e desenvolvimento do módulo 6;</li>
                     <li>Carlos Henrique Lechner: desenvolvimento do módulo 7;</li>
                     <li>Erika Lourrana Silva de Figueiredo: pesquisa do módulo 4;</li>
-                    <li>Felipe Mielke Ferreira: pesquisa e desenvolvimento do módulo 1 e 5. Desenvolvimento geral do site;</li>
-                    <li>João Victor Santana: ???;</li>
+                    <li>Felipe Mielke Vieira: pesquisa e desenvolvimento do módulo 1 e 5. Desenvolvimento geral do site;</li>
+                    <li>João Victor Santana: concepção das páginas;</li>
                     <li>João Vitor Winter: pesquisa e desenvolvimento do módulo 2. Desenvolvimento geral do site;</li>
                     <li>Karoliny Daiana Cieply: concepção das páginas e desenvolvimento geral do site;</li>
                     <li>Kauê Schaefer de Andrade: configuração inicial do projeto e desenvolvimento geral do site;</li>
