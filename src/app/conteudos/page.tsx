@@ -6,7 +6,7 @@ const Conteudos = () => {
         <>
             <SectionModulos
                 title="Módulos"
-                description="Aprenda os conceitos básicos da linguagem C, desde a sintaxe até a programação orientada a objetos."
+                description="Aprenda os conceitos básicos da linguagem C!"
                 modulos={[
                     {
                       icon: <Brain className="text-orange" size={"48px"} />,
