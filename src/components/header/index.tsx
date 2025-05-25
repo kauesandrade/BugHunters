@@ -39,20 +39,20 @@ const Header = () => {
     }, [lastScroll]);
 
     return (
-        <header id="header" className="grid grid-flow-col px-18 py-8 shadow-md shadow-orange fixed w-screen z-50 bg-background">
+        <header id="header" className="grid grid-flow-col px-18 py-8 shadow-md/60 shadow-orange fixed w-screen z-50 bg-background">
             <section className="flex items-center">
                 <img className="cursor-pointer" onClick={() => handleNavigation("/")} src="/logo.svg" alt="Logo Bug Hunters" />
             </section>
             <section className="flex items-center font-extralight">
-                <ul className="flex font-medium gap-24">
+                <ul className="flex gap-24">
                     <li>
-                        <a className="cursor-pointer" onClick={() => handleNavigation("/conteudos")}>Módulos</a>
+                        <a className="cursor-pointer hover:underline underline-offset-8" onClick={() => handleNavigation("/conteudos")}>Módulos</a>
                     </li>
                     {/* <li>
                         <a className="cursor-pointer" onClick={() => handleNavigation("/atividades")}>Atividades</a>
                     </li> */}
                     <li>
-                        <a className="cursor-pointer" onClick={() => handleNavigation("/sobre")}>Sobre</a>
+                        <a className="cursor-pointer hover:underline underline-offset-8" onClick={() => handleNavigation("/sobre")}>Sobre</a>
                     </li>
                 </ul>
             </section>

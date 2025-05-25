@@ -76,8 +76,8 @@ int main(void)
         <a className='w-100 h-14 flex justify-center items-center cursor-pointer bg-orange rounded-xl hover:-translate-y-1 duration-300 hover:shadow-lg/20 shadow-orange'
           href={`/conteudos/modulo3`}
         >
-          <b className='text-2xl font-bold text-black'>Próximo Módulo</b>
-          <ChevronRight className='text-black' size={44}></ChevronRight>
+          <b className='text-lg font-bold text-black'>Próximo Módulo</b>
+          <ChevronRight className='text-black' size={30}></ChevronRight>
         </a>
       </div>
     </main>
