@@ -1,7 +1,7 @@
 const Sobre = () => {
     return (
         <>
-            <section className="flex flex-col mt-40 min-h-screen w-full mb-10 px-45 gap-5">
+            <section className="flex flex-col mt-40 min-h-screen w-full mb-80 px-45 gap-5">
                 <h1 className="text-4xl font-bold text-center mb-10">
                     Sobre o projeto
                 </h1>

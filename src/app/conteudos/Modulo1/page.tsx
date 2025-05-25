@@ -6,7 +6,6 @@ import blocoDocumento from '../../../../public/BlocoDocumento.png';
 import blocoExibicao from '../../../../public/BlocoExibicao.png';
 import blocoInicio from '../../../../public/BlocoInicio.png';
 import blocoProcesso from '../../../../public/BlocoProcesso.png';
-import SolutionBlock from '@/components/SolutionBlock';
 
 const Modulo1 = () => {
     return (
@@ -32,7 +31,7 @@ const Modulo1 = () => {
                 </div>
 
                 <div className="flex flex-col gap-10">
-                    <h4 className="text-2xl font-medium underline underline-offset-4 decoration-orange">Algorítmos</h4>
+                    <h4 className="text-2xl font-medium underline underline-offset-4 decoration-orange">Algoritmos</h4>
                     <div className="flex flex-col gap-4">
                         <p>Algoritmos são sequências de passos a serem seguidos em direção a um objetivo determinado. Esses objetivos podem ser, por exemplo, fazer um bolo ou atravessar uma rua.</p>
                         <p>Antes mesmo de chegar nos códigos, os algoritmos podem ser representados de formas mais simples, desde uma sequência descritiva dos passos a serem realizados até a criação de fluxogramas, que serão explicados mais abaixo.</p>
@@ -114,29 +113,26 @@ const Modulo1 = () => {
 
                 <div>
                     <div className="flex flex-col gap-10">
-                        <h2 className="text-4xl font-semibold">Exercícios</h2>
+                        <h4 className="text-2xl font-medium underline underline-offset-4 decoration-orange">Exercícios</h4>
                         <div className="flex flex-col gap-4">
                             <p>Construa um Fluxograma para cada sistema descrito abaixo: </p>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-4 pt-4'>
-                        <SolutionBlock
-                            title='Um algoritmo que leia um número diferente de zero e diga se este número é positivo ou negativo.'
-                            code={''}>
-                        </SolutionBlock>
-                        <SolutionBlock
-                            title='Um algoritmo que receba 3 números e informe qual o maior entre eles.'
-                            code={''}>
-                        </SolutionBlock>
-                        <SolutionBlock
-                            title='Um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa em dias. Leve em consideração o ano com 365 dias e o mês com 30. (Ex: 3 anos, 2 meses e 15 dias = 1170 dias.).'
-                            code={''}>
-                        </SolutionBlock>
-                    </div>
+                    <ul className='flex flex-col gap-4 pt-4 list-disc list-inside pl-8 indent-[-24px]'>
+                        <li>
+                            Um algoritmo que leia um número diferente de zero e diga se este número é positivo ou negativo.
+                        </li>                        
+                        <li>
+                            Um algoritmo que receba 3 números e informe qual o maior entre eles.
+                        </li>
+                        <li>
+                            Um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa em dias. Leve em consideração o ano com 365 dias e o mês com 30. (Ex: 3 anos, 2 meses e 15 dias = 1170 dias.).
+                        </li>
+                    </ul>
 
                     <div className='pt-8'>
                         <p>Além disso, você também pode acessar o Racha Cuca para realizar desafios de lógica!</p>
-                        <ol className='list-disc list-inside pt-2'>
+                        <ol className='list-disc list-inside pt-2 pl-8 indent-[-24px]'>
                             <li className='text-orange hover:underline underline-offset-4'> <a href="https://rachacuca.com.br/logica/problemas/teste-de-einstein/">Teste de Einstein </a></li>
                             <li className='text-orange hover:underline underline-offset-4'> <a href="https://rachacuca.com.br/jogos/missionarios-e-canibais/">Missionários e canibais </a></li>
                             <li className='text-orange hover:underline underline-offset-4'> <a href="https://rachacuca.com.br/logica/problemas/carros-antigos/">Carros antigos </a></li>

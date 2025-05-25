@@ -72,6 +72,50 @@ int main()
 }`}
                 />
             </section>
+            <section>
+                <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
+                    Exemplos de códigos
+                </h3>
+                <p className="mt-6 mb-14">Código para a soma de dois números, utilizando o tipo int para resolução.</p>
+                <CodeBlock code=
+{`#include <stdio.h> 
+
+int main() { 
+    int num1, num2, soma; 
+
+    printf("Digite dois números inteiros: "); 
+    scanf("%d %d", &num1, &num2); 
+    soma = num1 + num2; 
+
+    printf("A soma é: %d\\n", soma); 
+
+    return 0; 
+}`}
+/>
+                <p className="mt-14 mb-14">Código para o cálculo da área de um círculo, utilizando o tipo float para resolução.</p>
+                <CodeBlock code=
+{`#include <stdio.h>  
+
+#define PI 3.14 
+
+int main() {  
+    float raio, area;  
+
+    printf("Digite o raio do círculo: ");  
+    scanf("%f", &raio); 
+    area = PI * raio * raio;
+
+	printf("A área do círculo é: %.2f\\n", area);
+
+    return 0;
+}`}
+/>
+            </section>
+            <section>
+                <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
+                    Exercícios
+                </h3>
+            </section>
         </main>
     )
 }
