@@ -105,7 +105,9 @@ switch (valor)
                     <li className="mt-6">Um algoritmo para o cálculo de média de notas de um aluno. Esse algoritmo precisa buscar 3 notas de um aluno e calcular o conceito final entre A, B e C. Após o conceito, o sistema mostra se o aluno está reprovado caso o conceito seja C, ou aprovado caso contrário. (A = Maior que 8, B = Entre 6 e 8, C = Menor que 6). </li>
                 </ul>
                 <CodeBlock code=
-                    {`int main() {
+{`#include <stdio.h>
+
+int main() {
 
     // Declara as variáveis
     float nota1, nota2, nota3, media; 
@@ -155,7 +157,9 @@ switch (valor)
                     <li className="mt-12">Um algoritmo que pede um número de 1 até 7 e retorna um dia da semana correspondente a esse número: </li>
                 </ul>
                 <CodeBlock code=
-                    {`int main (void)
+{`#include <stdio.h>
+
+int main (void)
 { 
     // Declaração das variáveis e pedindo o valor do dia
     int valor; 
@@ -204,7 +208,9 @@ switch (valor)
             </section>
 
             <section>
-                <h3 className="mt-14 font-semibold text-[2.5rem]">Atividades</h3>
+                <h3 className="mt-14 font-medium text-2xl underline underline-offset-4 decoration-orange">
+                    Exercícios
+                </h3>
 
                 <div className="flex flex-col gap-4 mt-8">
                     <SolutionBlock
@@ -225,8 +231,7 @@ int main() {
     }
 
     return 0;
-}
-`}
+}`}
                     />
 
                     <SolutionBlock
@@ -256,7 +261,7 @@ int main() {
                     />
 
                     <SolutionBlock
-                        title={"Dados três números verificar se eles podem representar as medidas dos lados de um triângulo e, se puderem, classificar o triângulo em equilátero, isósceles ou escaleno."}
+                        title={"Dados três lados de um triângulo, classifique-o em equilátero, isósceles ou escaleno."}
                         code=
                         {`#include <stdio.h>
 

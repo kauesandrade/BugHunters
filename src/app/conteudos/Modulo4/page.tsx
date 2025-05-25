@@ -199,7 +199,7 @@ int main(void)
 
     if (lado1 + lado2 < lado3 || lado3 + lado2 < lado1 || lado1 + lado3 < lado1)
     {
-        printf("Esses valores nao conseguem formar um triângulo.");
+        printf("Esses valores não conseguem formar um triângulo.");
     }
     else
     {
