@@ -126,7 +126,7 @@ const Modulo1 = () => {
                         <details className="bg-[#302B28] rounded-xl">
                             <summary className="text-orange px-2 py-3 select-none cursor-pointer"><span className="text-white">Um algoritmo que leia um número diferente de zero e diga se este número é positivo ou negativo.</span></summary>
                             <div className="p-6">
-                                <div className='bg-[#1F1E21] flex justify-center'>
+                                <div className='bg-[#1F1E21] flex justify-center rounded-xl'>
                                     <img className="pt-6 pb-10 w-3/6" src={fluxogramaAtividade1.src}></img>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@ const Modulo1 = () => {
                         <details className="bg-[#302B28] rounded-xl">
                             <summary className="text-orange px-2 py-3 select-none cursor-pointer"><span className="text-white">Um algoritmo que receba 3 números e informe qual o maior entre eles.</span></summary>
                             <div className="p-6">
-                                <div className='bg-[#1F1E21] flex justify-center'>
+                                <div className='bg-[#1F1E21] flex justify-center rounded-xl'>
                                     <img className="pt-6 pb-10 w-3/5" src={fluxogramaAtividade2.src}></img>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@ const Modulo1 = () => {
                         <details className="bg-[#302B28] rounded-xl">
                             <summary className="text-orange px-2 py-3 select-none cursor-pointer"><span className="text-white">Um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa em dias. Leve em consideração o ano com 365 dias e o mês com 30. (Ex: 3 anos, 2 meses e 15 dias = 1170 dias.).</span></summary>
                             <div className="p-6">
-                                <div className='bg-[#1F1E21] flex justify-center'>
+                                <div className='bg-[#1F1E21] flex justify-center rounded-xl'>
                                     <img className="pt-6 pb-10 w-2/5" src={fluxogramaAtividade3.src}></img>
                                 </div>
                             </div>
