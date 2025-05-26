@@ -47,7 +47,7 @@ const Sobre = () => {
                 </div>
 
                 <div className="bg-[#302B28] rounded-md p-5 flex flex-row gap-6">
-                    <img className="size-30 rounded-lg invert" src="/user.png" alt="Felipe Mielke Vieira" />
+                    <img className="size-30 rounded-lg" src="/felipe.jpeg" alt="Felipe Mielke Vieira" />
                     <div className="flex flex-col">
                         <p className="mt-2 text-2xl font-semibold text-orange">Felipe Mielke Vieira</p>
                         <p className="mt-2 font-light">Pesquisa e desenvolvimento do módulo 1 e 5 e desenvolvimento geral do site.</p>
